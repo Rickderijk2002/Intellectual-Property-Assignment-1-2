@@ -5,7 +5,7 @@ final submission to Canvas is still a .doc file per assignment's requirements, n
 
 ## Group 16
 
-Rick, Gilbert, Tycho, Thom, Stefan.
+Rick, Gilbert, Tycho, Thom, Stefan, Patryk
 
 ## Assignments
 
