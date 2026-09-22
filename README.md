@@ -22,6 +22,11 @@ Both assignments let you pick a data science project (e.g. from Data Entrepreneu
 Action) — can be the same project for both assignments, or different ones. Worth agreeing as a
 group before either draft starts.
 
+## Task division
+
+Two options for splitting the work across the group, for discussion at the next meeting:
+[`Task division proposal.md`](Task%20division%20proposal.md).
+
 ## AI usage
 
 Both assignments are AI Index Level 2: AI may only review a completed draft (spelling, grammar,
