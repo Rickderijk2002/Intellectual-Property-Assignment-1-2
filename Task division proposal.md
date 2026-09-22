@@ -24,10 +24,15 @@ Within each trio:
 - Section IV written jointly, synthesising the trio's own analysis
 - One person rotates in as integrator for the final pass: citations, footnotes, word count,
   Technology Statement, plagiarism check
+- Before submission, **the two trios swap reports**: Trio 2 (IP Law) reviews Trio 1's Data
+  Protection draft, Trio 1 reviews Trio 2's IP Law draft. Built-in fresh eyes on both, and it's
+  also how each trio gets read into the topic it didn't draft, ahead of the exam.
 
-**Pros:** only 3 co-authors per document, less coordination, easy to schedule.
-**Cons:** half the group never drafts the other topic. Needs a mandatory cross-read plus a
-joint prep session on both topics before the exam, or the other trio walks in cold.
+**Pros:** only 3 co-authors per document, less coordination, easy to schedule, and the
+cross-review covers the exam-prep gap without a separate meeting.
+**Cons:** half the group never drafts the other topic, only reviews it — reviewing is
+shallower than writing, so a joint prep session on both topics before 7 Dec is still worth
+doing, just less critical than without the swap.
 
 ## Option B — 6+6 (everyone on both assignments)
 
@@ -49,9 +54,10 @@ dates per section) or it turns into merge chaos near the deadline.
 
 ## Read
 
-Given the exam weight, Option B is the safer choice for actually learning both bodies of law,
-not just producing two decent reports. Option A only wins if the group is confident everyone
-will genuinely read the other report properly, which is the part that tends to slip.
+With the swap added, Option A is now the stronger default: less coordination overhead than 6
+co-authors on one document, and the cross-review still puts every person's eyes on both topics
+before the exam. Option B is only worth the extra coordination cost if the group wants everyone
+to have actually *drafted* both areas, not just reviewed one of them.
 
 ---
 
