@@ -24,8 +24,9 @@ group before either draft starts.
 
 ## Task division
 
-Two options for splitting the work across the group, for discussion at the next meeting:
-[`Task division proposal.md`](Task%20division%20proposal.md).
+Decided: a 3+3 split, one trio per assignment. Rick, Gilbert and Stefan on Assignment 1;
+Tycho, Thom and Patryk on Assignment 2. See [`Task division proposal.md`](Task%20division%20proposal.md)
+and, for Assignment 1, [`Task division.md`](Assignment%201%20-%20Data%20Protection/Task%20division.md).
 
 ## AI usage
 

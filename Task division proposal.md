@@ -1,65 +1,41 @@
-# Task Division Proposal — Group 16
+# Task Division: Group 16
 
-For discussion before drafting starts on Assignment 1 (Data Protection, due 13 Nov) and
-Assignment 2 (IP Law, due 20 Nov). Two options below, drawn from the actual briefs — pick one
-as a group and fill in names.
+**Decided: a 3+3 split, one trio per assignment.**
 
-## What both assignments share
+| Trio | Assignment | Due | Members |
+|---|---|---|---|
+| Trio 1 | #1, Privacy & data protection law | 13 Nov 2026 | Rick, Gilbert, Stefan |
+| Trio 2 | #2, Intellectual property law | 20 Nov 2026 | Tycho, Thom, Patryk |
 
-- 4 required sections each (see each assignment's `Assignment brief.md`), max 3000 words, 15%
-  of the course grade each.
-- Section III is the heaviest in both (800–1000 words in Assignment 1, 1000–1200 in Assignment
-  2) and carries most of the 9-point "Analysis & Assessment" rubric line.
-- Section IV (Advice) draws on all three prior sections, so it's naturally a joint-synthesis
-  step rather than a solo draft.
-- The final exam is 70% of the grade and covers both data protection and IP law, so whichever
-  split we pick, everyone needs to have read the finished version of both reports before 7 Dec.
+## How each trio works
 
-## Option A — 3+3 (one team per assignment)
+- Each trio owns its assignment end to end: project choice (within the group's agreement, see
+  below), drafting, integration and submission.
+- The work inside a trio is divided by **word load, not by section count**. Section III is by
+  far the heaviest in both briefs, so one person per section would not be an equal split. Each
+  trio's own division file sets out who does what.
+- **Section IV (Advice) is shared.** Each member writes the advice that follows from their own
+  analysis, and the trio settles the overall conclusion together in one sitting.
+- **One integrator per trio** runs the final pass: citations, footnotes, word count, the header
+  (group number, names, student numbers) and the Technology Statement.
+- **Before submission the two trios swap reports.** Trio 2 reviews Trio 1's data protection draft,
+  Trio 1 reviews Trio 2's IP law draft. That gives fresh eyes on both reports, and it is how each
+  trio gets read into the topic it did not draft, ahead of the exam.
 
-Split into two trios. Trio 1 owns Assignment 1 end to end, Trio 2 owns Assignment 2.
+## Why this and not everyone on both
 
-Within each trio:
-- One person per analytical section (I, II, III)
-- Section IV written jointly, synthesising the trio's own analysis
-- One person rotates in as integrator for the final pass: citations, footnotes, word count,
-  Technology Statement, plagiarism check
-- Before submission, **the two trios swap reports**: Trio 2 (IP Law) reviews Trio 1's Data
-  Protection draft, Trio 1 reviews Trio 2's IP Law draft. Built-in fresh eyes on both, and it's
-  also how each trio gets read into the topic it didn't draft, ahead of the exam.
+Three co-authors per 3000-word document keeps coordination light and scheduling easy, and the
+cross-review still puts everyone's eyes on both topics before the exam. The one real cost:
+reviewing is shallower than writing. The final exam (70%, 7 Dec) covers both data protection and
+IP law, so a joint session on both topics before then is still worth planning.
 
-**Pros:** only 3 co-authors per document, less coordination, easy to schedule, and the
-cross-review covers the exam-prep gap without a separate meeting.
-**Cons:** half the group never drafts the other topic, only reviews it — reviewing is
-shallower than writing, so a joint prep session on both topics before 7 Dec is still worth
-doing, just less critical than without the swap.
+## Still to agree as a whole group
 
-## Option B — 6+6 (everyone on both assignments)
+Whether both trios analyse the **same data science project** or two different ones. The briefs
+allow either. The same project means shared facts and less description work for Trio 2, whose
+deadline comes a week later.
 
-All six contribute to both reports, each in a smaller slice.
+## Division per assignment
 
-Within each report (6 people):
-- Section III (heaviest, most rubric weight) co-written by 2 people
-- Sections I, II, IV each owned by 1 person
-- 1 person as dedicated integrator: checks every legal citation and case reference, enforces
-  word/footnote limits, writes the Technology Statement
-
-Repeat the same structure for the other assignment, ideally with different people in each role
-the second time, so nobody drafts "intro" twice and everyone gets exposure to both topics.
-
-**Pros:** everyone works on both data protection and IP law, directly useful for the 70%-weight
-exam.
-**Cons:** 6 co-authors on one 3000-word document needs a tighter schedule (agreed draft-by
-dates per section) or it turns into merge chaos near the deadline.
-
-## Read
-
-With the swap added, Option A is now the stronger default: less coordination overhead than 6
-co-authors on one document, and the cross-review still puts every person's eyes on both topics
-before the exam. Option B is only worth the extra coordination cost if the group wants everyone
-to have actually *drafted* both areas, not just reviewed one of them.
-
----
-
-Once the group picks a structure, fill in names and section owners here or directly in each
-assignment's `Report draft.md`.
+- Assignment 1: [`Assignment 1 - Data Protection/Task division.md`](Assignment%201%20-%20Data%20Protection/Task%20division.md)
+- Assignment 2: to be written by Trio 2.

@@ -1,7 +1,7 @@
 **Assignment #1: Privacy & Data protection law**
 
 - Group No: 16
-- Names of students in group: Rick, Gilbert, Tycho, Thom, Stefan
+- Names of students in group: Rick, Gilbert, Stefan
 - Total word-count [Sections I+II+III+IV] (excluding footnotes):
 
 **Report on [Title of your project]**
