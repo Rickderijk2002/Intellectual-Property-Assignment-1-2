@@ -1,3 +1,7 @@
 ~$*.doc
 ~$*.docx
 .DS_Store
+
+# Quarto intermediates (keep .qmd and the final .pdf)
+*/docs/Report/*.tex
+*/docs/Report/*_files/
