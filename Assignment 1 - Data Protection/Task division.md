@@ -21,7 +21,7 @@ step comes first and is done jointly.
 **Why it balances:** Person C carries the heaviest section, but writes the least advice. Person A
 has the lightest writing load, so also takes the **integrator** role: the report header (group
 number, names, student numbers, word count), footnote formatting, the final word count, the
-Technology Statement, and merging everything into the final .doc.
+Technology Statement, and rendering the final PDF from the .qmd.
 
 ## Where to start now
 
@@ -55,7 +55,7 @@ provisions and case law to support it.
 | 23 Oct | Section drafts I, II, III plus each advice share |
 | 30 Oct | Ring review done, Section IV sitting held |
 | 4 Nov | Draft to Trio 2 for cross-review |
-| 10 Nov | Integrated .doc final |
+| 10 Nov | Integrated PDF final |
 | 13 Nov, 23:59 | Deadline. Late submissions are not accepted |
 
 ## AI rule, for everyone

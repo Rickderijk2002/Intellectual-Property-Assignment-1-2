@@ -1,7 +1,8 @@
 # Intellectual Property and Privacy — Group 16
 
 JADS course JM0160-M-6, fall 2026. Shared working repository for both group assignments;
-final submission to Canvas is still a .doc file per assignment's requirements, not this repo.
+Assignment 1 is written in Quarto (`Assignment 1 - Data Protection/docs/Report/`) and submitted to
+Canvas as the rendered PDF.
 
 ## Group 16
 
