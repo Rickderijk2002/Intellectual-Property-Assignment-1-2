@@ -12,11 +12,7 @@ The report analyses one common and agreed version of the Learning Benchmarking T
 
 ---
 
-
-
 ## Step 0, together: agreed case definition
-
-
 
 ### Project
 
@@ -67,23 +63,25 @@ Identifying information and the re-identification mapping are retained only for 
 For consistency, distinguish between three data layers throughout the report:
 
 1. **Survey-administration and identification data**
-  - directly identifiable participant data;
-  - for example name, email address, organisation and learning programme;
-  - the information required to link participant identities to pseudonymous identifiers;
-  - used only where necessary to administer the survey cycle and required follow-up measurements;
-  - stored separately from the analytical dataset with restricted access;
-  - deleted when re-identification is no longer necessary for the survey purpose.
+   - directly identifiable participant data;
+   - for example name, email address, organisation and learning programme;
+   - the information required to link participant identities to pseudonymous identifiers;
+   - used only where necessary to administer the survey cycle and required follow-up measurements;
+   - stored separately from the analytical dataset with restricted access;
+   - deleted when re-identification is no longer necessary for the survey purpose.
+
 2. **Analytical data**
-  - pseudonymised participant identifier;
-  - survey responses;
-  - learning and evaluation measurements;
-  - pre/post learning scores and other relevant LBT indicators;
-  - used to calculate programme-level L1-L4 KPIs.
+   - pseudonymised participant identifier;
+   - survey responses;
+   - learning and evaluation measurements;
+   - pre/post learning scores and other relevant LBT indicators;
+   - used to calculate programme-level L1-L4 KPIs.
+
 3. **Benchmark data and outputs**
-  - aggregated programme-level KPIs;
-  - programme-level model outputs;
-  - cross-organisational benchmark statistics;
-  - - intended to be anonymised so that individual participants are no longer reasonably identifiable.
+   - aggregated programme-level KPIs;
+   - programme-level model outputs;
+   - cross-organisational benchmark statistics;
+   - intended to be anonymised so that individual participants are no longer reasonably identifiable.
 
 Pseudonymised participant-level data are still treated as personal data. Pseudonymisation must therefore not be treated as equivalent to anonymisation.
 
@@ -123,21 +121,17 @@ If legal analysis shows that one of these assumptions should be changed, discuss
 
 ---
 
-
-
 ## The split
 
-
-| Role                     | Owns                                                                                                                                                                                                      | Advice share (Section IV)                                                                                | Approx. words                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| **Person A – (Gilbert)** | **Section I: Introduction + Description.** Operational LBT, processing architecture, personal data, data subjects, Article 9 assessment and GDPR actor roles. Also acts as **Case Owner and Integrator**. | Data alternatives and architecture: data reduction, pseudonymisation, aggregation and anonymisation      | ~500 + ~200, plus Case Owner/Integrator |
-| **Person B**             | **Section II: How are the data processed?** Processing purposes and application of Article 5 GDPR principles                                                                                              | Technical and organisational measures, retention, security, accountability and data protection by design | ~550 + ~250                             |
-| **Person C**             | **Section III: On which legal basis?** Lawful basis per processing purpose and controller, including assessment of relevant Article 6 grounds                                                             | Overall lawful-processing assessment and required governance changes                                     | ~900 + ~150                             |
-
+| Role | Owns | Advice share (Section IV) | Approx. words |
+|---|---|---|---|
+| **Person A – Gilbert** | **Section I: Introduction + Description.** Operational LBT, processing architecture, personal data, data subjects, Article 9 assessment and GDPR actor roles. Also acts as **Case Owner and Integrator**. | Data alternatives and architecture: data reduction, pseudonymisation, aggregation and anonymisation | ~500 + ~200, plus Case Owner/Integrator |
+| **Person B** | **Section II: How are the data processed?** Processing purposes and application of Article 5 GDPR principles | Technical and organisational measures, retention, security, accountability and data protection by design | ~550 + ~250 |
+| **Person C** | **Section III: On which legal basis?** Lawful basis per processing purpose and controller, including assessment of relevant Article 6 grounds | Overall lawful-processing assessment and required governance changes | ~900 + ~150 |
 
 The exact allocation may change during integration. The final report must remain below the assignment's 3000-word limit.
 
-**Why this balances:** Person C carries the most substantial lawful-basis analysis but writes the smallest separate advice contribution. Person A has a smaller analytical section and therefore also takes the **integrator** role.
+**Why this balances:** Person C carries the most substantial lawful-basis analysis but writes the smallest separate advice contribution. Person A has a smaller analytical section and therefore also takes the **Integrator** role.
 
 ### Case Owner: Person A
 
@@ -167,7 +161,7 @@ Each section owner remains responsible for:
 
 If the legal analysis indicates that an assumption in the Step 0 case definition should be changed, this must be discussed by the trio before the case definition or another section is changed.
 
-The integrator is responsible for:
+The Integrator is responsible for:
 
 - report header;
 - group number;
@@ -180,8 +174,6 @@ The integrator is responsible for:
 - rendering the final PDF from the `.qmd`.
 
 ---
-
-
 
 # Person A
 
@@ -279,15 +271,11 @@ Consider:
 
 ---
 
-
-
 # Person B
-
-
 
 ## Section II: How are the data processed?
 
-Person B analyses the purposes and the data-protection principles.
+Person B analyses the purposes and the data protection principles.
 
 ### B1. Define the processing purposes
 
@@ -336,7 +324,7 @@ Assess which data are actually necessary for:
 - programme-level KPI calculation;
 - benchmarking.
 
-Consider whether identifiable information is necessary after survey administration.
+Consider whether identifiable information remains necessary throughout the survey cycle and for required follow-up measurements, and whether it can be deleted once those purposes have been completed.
 
 #### Accuracy
 
@@ -345,11 +333,10 @@ Assess the importance of accurate survey and learning data for KPI calculation a
 Consider limitations associated with survey responses and derived KPIs.
 
 #### Storage limitation
-Assess whether the retention of identifiable participant data and the re-identification mapping is necessary throughout the survey cycle, including
-follow-up measurements, and determine how the retention period should be linked to that purpose.
 
-Assess whether deletion of the identifying information and mapping once re-identification is no longer necessary satisfies the storage limitation
-principle.
+Assess whether the retention of identifiable participant data and the re-identification mapping is necessary throughout the survey cycle, including follow-up measurements, and determine how the retention period should be linked to that purpose.
+
+Assess whether deletion of the identifying information and mapping once re-identification is no longer necessary satisfies the storage limitation principle.
 
 Consider different retention requirements for:
 
@@ -399,11 +386,7 @@ Recommendations must follow from problems or risks identified in Section II rath
 
 ---
 
-
-
 # Person C
-
-
 
 ## Section III: On which legal basis?
 
@@ -482,28 +465,22 @@ State:
 
 ---
 
-
-
 # Lecture material
 
 The lectures already given provide the starting point for the legal analysis.
 
-
-| Role         | Primary lecture material                                                                                                                                   |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Person A** | Lecture 1: GDPR scope and concepts, personal data, data subjects, controllers and processors                                                               |
-| **Person B** | Lecture 3: Article 5 data-protection principles                                                                                                            |
-| **Person C** | Lectures 2 and 4: Article 6 lawful processing, consent, contract, legitimate interest and special-category data                                            |
-| **All**      | Lecture 1 legal reasoning approach: identify the relevant rule/concept → identify the legal test → apply it to the LBT facts → reach a reasoned conclusion |
-
+| Role | Primary lecture material |
+|---|---|
+| **Person A** | Lecture 1: GDPR scope and concepts, personal data, data subjects, controllers and processors |
+| **Person B** | Lecture 3: Article 5 data protection principles |
+| **Person C** | Lectures 2 and 4: Article 6 lawful processing, consent, contract, legitimate interest and special-category data |
+| **All** | Lecture 1 legal reasoning approach: identify the relevant rule/concept → identify the legal test → apply it to the LBT facts → reach a reasoned conclusion |
 
 Lecture 5 should be reviewed after it has been given, particularly for fairness, transparency, profiling and automated decision-making.
 
 Because the LBT predictive models operate at programme level rather than making individual employee decisions, do not assume that individual automated decision-making rules apply. Assess their relevance based on the actual processing.
 
 ---
-
-
 
 # Legal research responsibility
 
@@ -526,8 +503,6 @@ The reasoning should show **why** a provision applies and **how** it affects the
 
 ---
 
-
-
 # Section IV: Advice
 
 Section IV is developed jointly.
@@ -547,15 +522,11 @@ The advice should address at least:
 - anonymisation of benchmark outputs;
 - protection against re-identification.
 
-
-
 ### Governance
 
 - clear separation of Business Monitor's processor and controller activities;
 - appropriate controller-processor arrangements;
 - clearly documented processing purposes and responsibilities.
-
-
 
 ### Transparency
 
@@ -564,13 +535,9 @@ The advice should address at least:
 - programme-level analytics;
 - cross-organisational benchmarking.
 
-
-
 ### Retention
 
-- separate retention rules for identifiable, pseudonymised and anonymous/aggregated data.
-
-
+- separate retention rules for identifiable, pseudonymised and anonymised/aggregated data.
 
 ### Security
 
@@ -580,8 +547,6 @@ The advice should address at least:
 - logging;
 - appropriate organisational controls.
 
-
-
 ### Accountability and privacy by design
 
 - appropriate documentation;
@@ -589,8 +554,6 @@ The advice should address at least:
 - documented legitimate-interest assessment where relied upon;
 - data protection by design and by default;
 - periodic review of whether participant-level data remain necessary.
-
-
 
 ### Functional limitation
 
@@ -600,65 +563,73 @@ Individual-level predictions or use of LBT outputs for automated employment deci
 
 ---
 
-
-
 # Review and integration
 
 1. **Case-definition check**
-  Before drafting, all three authors confirm that they are using the Step 0 architecture.
+
+   Before drafting, all three authors confirm that they are using the Step 0 architecture.
+
 2. **Peer review in a ring**
-  - A reviews B;
-  - B reviews C;
-  - C reviews A.
+
+   - A reviews B;
+   - B reviews C;
+   - C reviews A.
+
    Review the legal reasoning and factual consistency, not just language.
+
 3. **Cross-section consistency review**
-  Before final integration, Person A performs a factual case review to verify that Sections I-IV describe the LBT consistently.
+
+   Before final integration, Person A performs a factual case review to verify that Sections I-IV describe the LBT consistently.
+
    This review checks factual consistency only and must not override the independent legal conclusions of Persons B and C.
+
    Check specifically that:
-  - actor roles are consistent between Sections I and III;
-  - purposes are consistent between Sections II and III;
-  - Person C uses the same processing operations identified by Person B;
-  - advice addresses risks actually identified in Sections I-III;
-  - pseudonymisation and anonymisation are not used interchangeably;
-  - programme-level prediction is not accidentally described as individual profiling.
+
+   - actor roles are consistent between Sections I and III;
+   - purposes are consistent between Sections II and III;
+   - Person C uses the same processing operations identified by Person B;
+   - advice addresses risks actually identified in Sections I-III;
+   - pseudonymisation and anonymisation are not used interchangeably;
+   - programme-level prediction is not accidentally described as individual profiling.
+
 4. **Section IV sitting**
-  All three authors combine their advice contributions into one coherent recommendation and conclusion.
+
+   All three authors combine their advice contributions into one coherent recommendation and conclusion.
+
 5. **Cross-trio review**
-  Trio 2 reads the complete draft according to the agreed group process.
+
+   Trio 2 reads the complete draft according to the agreed group process.
+
 6. **Final integration by Person A**
-  Person A checks:
-  - one consistent voice;
-  - one set of LBT facts;
-  - consistent terminology;
-  - correct citations and footnotes;
-  - no unnecessary repetition;
-  - compliance with the 3000-word limit;
-  - complete report header;
-  - complete Technology Statement;
-  - successful final PDF rendering.
+
+   Person A checks:
+
+   - one consistent voice;
+   - one set of LBT facts;
+   - consistent terminology;
+   - correct citations and footnotes;
+   - no unnecessary repetition;
+   - compliance with the 3000-word limit;
+   - complete report header;
+   - complete Technology Statement;
+   - successful final PDF rendering.
 
 ---
 
-
-
 # Suggested timeline
 
-
-| By                | Milestone                                                                       |
-| ----------------- | ------------------------------------------------------------------------------- |
-| **3 Oct**         | Step 0 case definition agreed and roles A/B/C assigned                          |
-| **23 Oct**        | Drafts of Sections I, II and III plus individual advice contributions completed |
-| **30 Oct**        | Ring review completed and joint Section IV session held                         |
-| **4 Nov**         | Integrated draft sent to Trio 2 for cross-review                                |
-| **10 Nov**        | Final substantive and legal review completed                                    |
-| **13 Nov, 23:59** | Submission deadline                                                             |
-
+| By | Milestone |
+|---|---|
+| **3 Oct** | Step 0 case definition agreed and roles A/B/C assigned |
+| **23 Oct** | Drafts of Sections I, II and III plus individual advice contributions completed |
+| **30 Oct** | Ring review completed and joint Section IV session held |
+| **4 Nov** | Integrated draft sent to Trio 2 for cross-review |
+| **10 Nov** | Final substantive and legal review completed |
+| **13 Nov, 23:59** | Submission deadline |
 
 Aim to have the substantive report complete by 10 November. The final days should be reserved for checking, formatting and submission rather than substantive rewriting.
 
 ---
-
-
 
 # AI rule, for everyone
 
@@ -668,6 +639,6 @@ Under **AI Index Level 2**, AI may only be used within the limits permitted by t
 
 AI must not be used to generate assignment text, tables or graphs where this is prohibited by the course rules.
 
-Anyone using an AI tool must inform the integrator so that its use can be correctly reported in the **Technology Statement**.
+Anyone using an AI tool must inform the Integrator so that its use can be correctly reported in the **Technology Statement**.
 
 When in doubt about whether a particular use is permitted, check the official course or assignment instructions before using the tool.
