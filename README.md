@@ -28,9 +28,3 @@ group before either draft starts.
 Decided: a 3+3 split, one trio per assignment. Rick, Gilbert and Stefan on Assignment 1;
 Tycho, Thom and Patryk on Assignment 2. See [`Task division proposal.md`](Task%20division%20proposal.md)
 and, for Assignment 1, [`Task division.md`](Assignment%201%20-%20Data%20Protection/Task%20division.md).
-
-## AI usage
-
-Both assignments are AI Index Level 2: AI may only review a completed draft (spelling, grammar,
-coherence, referencing), never generate text, tables or graphs. Each report needs its own
-Technology Statement (template in each assignment's brief) naming every tool used and what for.
