@@ -49,23 +49,41 @@ Remove this callout before the final render.
 
 # Introduction and Description
 
-*400 to 600 words. Owner: Person A.*
+## Learning Benchmarking Tool
 
-## The project
+Business Monitor developed the Learning Benchmarking Tool (LBT) to support organisations in evaluating and comparing the effectiveness of their learning programmes [@BusinessMonitor2026, p. 4]. The tool applies the Kirkpatrick framework to measure learning effectiveness across four levels: Reaction (L1), Learning (L2), Behaviour (L3), and Results (L4) [@BusinessMonitor2026, pp. 4, 11-12].
 
-*What Business Monitor is and does: the training, the surveys, and what managers get to see.*
+The original LBT was developed as a proof of concept using a fully synthetic organisational dataset [@BusinessMonitor2026, p. 4]. Its data structures include both programme-level and participant-level data and were designed to be compatible with future real organisational data [@BusinessMonitor2026, p. 10]. The current MVP therefore demonstrates the analytical logic without processing real participant data. The original project identifies piloting with real organisational data as a next step towards an operational benchmarking service [@BusinessMonitor2026, pp. 27-29].
 
-## Personal data processed
+For the purpose of this data protection assessment, an operational scenario is considered in which Business Monitor administers participant surveys on behalf of participating organisations.[^1] Business Monitor therefore initially processes the participant information required to invite participants and administer the surveys. After collection, participant-level survey and learning data are pseudonymised for analytical processing.
 
-*Which personal data are processed, from whom, at which stage.*
+[^1]: This is an operational assumption adopted for the present data protection assessment. The original LBT report assumes that participating organisations submit aggregated or pseudonymised data and does not specify that Business Monitor itself administers participant surveys; see @BusinessMonitor2026, p. 29.
 
-## Special categories of data
+These data are subsequently used to calculate programme-level indicators across the four Kirkpatrick levels. The original MVP already aggregates programme- and participant-level data into comparable KPIs and benchmarking outputs [@BusinessMonitor2026, pp. 11-13]. For the operational scenario assessed in this report, the analytical functionality is extended to programme-level predictive models intended to predict learning outcomes and KPIs rather than the performance, behaviour, or capabilities of individual participants.[^2]
 
-*Whether any survey data fall under Article 9, and why or why not.*
+[^2]: This programme-level predictive functionality is an assumption for the intended operational LBT. In the original MVP, the Random Forest and Gradient Boosting models are described as explanatory rather than predictive and are used to identify the importance of design and contextual variables in explaining KPI variation; see @BusinessMonitor2026, p. 12.
 
-## Actors and their roles
+The resulting programme-level data can contribute to cross-organisational benchmarking. This is consistent with the LBT value proposition, in which Business Monitor acts as a neutral hub that aggregates learning evaluation data to enable comparisons across participating organisations [@BusinessMonitor2026, pp. 6-7]. Benchmark results presented to customers are intended to be aggregated and anonymised.
 
-*Data subjects, controller, processor(s), with the reasoning for each controller or processor determination.*
+## Personal Data and Data Subjects
+
+For this assessment, the processing can be considered in three data layers. First, survey administration involves directly identifiable personal data, such as participant contact details required to administer the survey. Second, the analytical layer contains pseudonymised participant-level data, including survey responses, learning measurements, and contextual information relevant to the calculation of the programme-level indicators. The original LBT data model already distinguishes between programme-level and participant-level data and includes participant responses, behavioural indicators, and contextual information [@BusinessMonitor2026, pp. 10, 32-33].
+
+Article 4(5) GDPR defines pseudonymisation as processing personal data in such a manner that the data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept separately and subject to appropriate technical and organisational measures [@GDPR, art. 4(5)]. Pseudonymisation does not in itself remove these data from the scope of the GDPR. Recital 26 states that pseudonymised personal data that could be attributed to a natural person through the use of additional information should be considered information relating to an identifiable natural person [@GDPR, recital 26].
+
+Third, programme-level indicators and cross-organisational benchmark results are aggregated, with the intention that the final benchmark outputs no longer permit individual participants to be identified. This follows the intended deployment direction described in the original LBT report, in which outputs should be reported at a level where re-identification is not reasonably possible [@BusinessMonitor2026, p. 29]. The principal data subjects in the operational scenario are the employees or other individuals participating in the learning programmes.
+
+The standard LBT is not designed to collect special categories of personal data within the meaning of Article 9 GDPR [@GDPR, art. 9(1)]. Nevertheless, the survey process may create a risk that such information is provided unintentionally, for example through free-text responses. Whether such fields are necessary and how this risk can be minimised therefore requires consideration when applying the data protection principles.
+
+## GDPR Actors
+
+The allocation of GDPR roles depends on the particular processing operation. Article 4(7) GDPR defines a controller as the natural or legal person or other body that determines the purposes and means of processing personal data. Article 4(8) defines a processor as an entity that processes personal data on behalf of the controller [@GDPR, art. 4(7)-(8)].
+
+In the operational LBT scenario, a participating organisation determines why the learning effectiveness of its employees is evaluated and may therefore qualify as controller for that processing purpose. Business Monitor may act as processor where it administers surveys and performs agreed analytical activities on the organisation's behalf.
+
+Business Monitor's role may, however, differ when data from multiple participating organisations are subsequently used for the cross-organisational benchmarking service. The original business model positions Business Monitor as a neutral hub for cross-organisational data collaboration and benchmarking [@BusinessMonitor2026, pp. 6-7]. If Business Monitor independently determines the purpose and essential means of this subsequent processing, it may qualify as controller for that separate processing activity. The relevant GDPR roles must therefore be assessed per processing operation rather than assigning Business Monitor a single role for the LBT as a whole.
+
+The following sections assess these processing activities against the GDPR data protection principles, examine the applicable lawful bases, and develop recommendations for the compliant operation of the LBT.
 
 # How Are the Data Processed?
 
