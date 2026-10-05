@@ -97,35 +97,71 @@ The LBT involves five processing operations, each with its own purpose: survey a
 
 ### Lawfulness, fairness and transparency
 
-Lawfulness is assessed in Section 3. Fairness and transparency are tested here, because the employment relationship leaves participants little real choice about taking part.^[@GDPR, art. 5(1)(a) and recital 39.] Processing is unfair if participants cannot foresee that their answers also feed a commercial benchmark. If Business Monitor obtains contact details from the employer rather than from the participant, it must inform participants at the latest at the first contact, the survey invitation;^[@GDPR, art. 14(1) and (3)(b).] information on the answers collected from participants themselves falls under Article 13.^[@GDPR, art. 13(1).] The information must be concise, intelligible and in plain language,^[@GDPR, art. 12(1).] name each controller and state each purpose, including benchmarking.^[@GDPR, art. 13(1)(a) and (c), art. 14(1)(a) and (c).] A further purpose must be notified before that processing starts.^[@GDPR, art. 13(3).] Without such notice, the reasonable expectations on which the Article 6(4) assessment below depends cannot be met.
+Lawfulness is assessed in Section 3. Fairness and transparency are tested here, because the employment relationship leaves participants little real choice about taking part.[^4] Processing is unfair if participants cannot foresee that their answers also feed a commercial benchmark. If Business Monitor obtains contact details from the employer rather than from the participant, it must inform participants at the latest at the first contact, the survey invitation;[^5] information on the answers collected from participants themselves falls under Article 13.[^6] The information must be concise, intelligible and in plain language,[^7] name each controller and state each purpose, including benchmarking.[^8] A further purpose must be notified before that processing starts.[^9] Without such notice, the reasonable expectations on which the Article 6(4) assessment below depends cannot be met.
+
+[^4]: @GDPR, art. 5(1)(a) and recital 39.
+
+[^5]: @GDPR, art. 14(1) and (3)(b).
+
+[^6]: @GDPR, art. 13(1).
+
+[^7]: @GDPR, art. 12(1).
+
+[^8]: @GDPR, art. 13(1)(a) and (c), art. 14(1)(a) and (c).
+
+[^9]: @GDPR, art. 13(3).
 
 ### Purpose limitation
 
-Article 5(1)(b) GDPR requires specified, explicit and legitimate purposes and prohibits further processing that is incompatible with them.^[@GDPR, art. 5(1)(b).] Benchmarking is the critical transition: participants provide data for their employer's evaluation, and the data later feed a product used by other organisations.
+Article 5(1)(b) GDPR requires specified, explicit and legitimate purposes and prohibits further processing that is incompatible with them.[^10] Benchmarking is the critical transition: participants provide data for their employer's evaluation, and the data later feed a product used by other organisations.
 
-Compatibility depends on the factors in Article 6(4).^[@GDPR, art. 6(4).] The link is strong, since benchmarking uses the same indicators for the same evaluative aim. The context is weaker: employees expect their employer to evaluate a programme, not that their answers inform a commercial comparison between companies, and the employment relationship limits their real choice.
+[^10]: @GDPR, art. 5(1)(b).
 
-Article 5(1)(b) offers a second route: further processing for statistical purposes is not considered incompatible, in accordance with Article 89(1). Under Recital 162 the result must be aggregate data not used in support of decisions regarding a particular natural person,^[@GDPR, art. 5(1)(b), art. 89(1) and recital 162.] which fits the programme-level design of the LBT. This route supports the Article 6(4) assessment but does not replace it. Benchmarking is therefore compatible only if participants are told in advance, outputs are demonstrably aggregate, and no output is used for decisions about individuals.
+Compatibility depends on the factors in Article 6(4).[^11] The link is strong, since benchmarking uses the same indicators for the same evaluative aim. The context is weaker: employees expect their employer to evaluate a programme, not that their answers inform a commercial comparison between companies, and the employment relationship limits their real choice.
+
+[^11]: @GDPR, art. 6(4).
+
+Article 5(1)(b) offers a second route: further processing for statistical purposes is not considered incompatible, in accordance with Article 89(1). Under Recital 162 the result must be aggregate data not used in support of decisions regarding a particular natural person,[^12] which fits the programme-level design of the LBT. This route supports the Article 6(4) assessment but does not replace it. Benchmarking is therefore compatible only if participants are told in advance, outputs are demonstrably aggregate, and no output is used for decisions about individuals.
+
+[^12]: @GDPR, art. 5(1)(b), art. 89(1) and recital 162.
 
 ### Data minimisation
 
-Article 5(1)(c) limits data to what is necessary for each purpose.^[@GDPR, art. 5(1)(c).] Directly identifying data are needed only for survey administration; analysis needs the pseudonymous identifier and the measured variables. The original data model also holds participant-level variables such as location, a manager-support rating and a promotion flag.^[@BusinessMonitor2026, p. 33.] Each must be shown to be necessary; the promotion flag in particular records an employment outcome, whereas the indicator needs only a programme-level count. Free-text fields should be avoided, as they invite unnecessary or special-category data.
+Article 5(1)(c) limits data to what is necessary for each purpose.[^13] Directly identifying data are needed only for survey administration; analysis needs the pseudonymous identifier and the measured variables. The original data model also holds participant-level variables such as location, a manager-support rating and a promotion flag.[^14] Each must be shown to be necessary; the promotion flag in particular records an employment outcome, whereas the indicator needs only a programme-level count. Free-text fields should be avoided, as they invite unnecessary or special-category data.
+
+[^13]: @GDPR, art. 5(1)(c).
+
+[^14]: @BusinessMonitor2026, p. 33.
 
 ### Accuracy
 
-Article 5(1)(d) requires data to be accurate and, where necessary, up to date.^[@GDPR, art. 5(1)(d).] Most LBT indicators rest on self-reported Likert scores, which the original report itself describes as subject to response bias,^[@BusinessMonitor2026, p. 18.] and follow-up measurements link responses over time through the pseudonymous identifier.
+Article 5(1)(d) requires data to be accurate and, where necessary, up to date.[^15] Most LBT indicators rest on self-reported Likert scores, which the original report itself describes as subject to response bias,[^16] and follow-up measurements link responses over time through the pseudonymous identifier.
+
+[^15]: @GDPR, art. 5(1)(d).
+
+[^16]: @BusinessMonitor2026, p. 18.
 
 ### Storage limitation
 
-Article 5(1)(e) allows identifiable data to be kept only as long as necessary.^[@GDPR, art. 5(1)(e).] The three data layers need different periods. Identification data and the mapping are necessary only until the last follow-up measurement of the survey cycle and must then be deleted, as the case definition provides. Deleting the mapping can make the analytical data anonymous, but only if neither Business Monitor nor any other person could still identify participants by means reasonably likely to be used.^[@GDPR, recital 26.] That is doubtful where the participating organisation knows who attended a programme, and in small cohorts, such as the original design's minimum of eight participants, where combinations of contextual variables can single people out.^[@BusinessMonitor2026, pp. 13-14.] Only aggregated outputs with a sufficient minimum cohort size can reliably fall outside the GDPR.
+Article 5(1)(e) allows identifiable data to be kept only as long as necessary.[^17] The three data layers need different periods. Identification data and the mapping are necessary only until the last follow-up measurement of the survey cycle and must then be deleted, as the case definition provides. Deleting the mapping can make the analytical data anonymous, but only if neither Business Monitor nor any other person could still identify participants by means reasonably likely to be used.[^18] That is doubtful where the participating organisation knows who attended a programme, and in small cohorts, such as the original design's minimum of eight participants, where combinations of contextual variables can single people out.[^19] Only aggregated outputs with a sufficient minimum cohort size can reliably fall outside the GDPR.
+
+[^17]: @GDPR, art. 5(1)(e).
+
+[^18]: @GDPR, recital 26.
+
+[^19]: @BusinessMonitor2026, pp. 13-14.
 
 ### Integrity and confidentiality
 
-Article 5(1)(f) requires appropriate security.^[@GDPR, art. 5(1)(f) and art. 32(1).] Business Monitor would hold identifiable contact data and the key that reverses pseudonymisation. Stored next to the analytical data, that key would make pseudonymisation largely pointless, because Article 4(5) requires additional information to be kept separately and protected. Access should be limited to the staff who administer the survey.
+Article 5(1)(f) requires appropriate security.[^20] Business Monitor would hold identifiable contact data and the key that reverses pseudonymisation. Stored next to the analytical data, that key would make pseudonymisation largely pointless, because Article 4(5) requires additional information to be kept separately and protected. Access should be limited to the staff who administer the survey.
+
+[^20]: @GDPR, art. 5(1)(f) and art. 32(1).
 
 ### Accountability
 
-Article 5(2) makes the controller responsible for demonstrating compliance:^[@GDPR, art. 5(2).] the participating organisation, and Business Monitor for benchmarking if it is controller there. The agreements and records proposed in Section 4 should allocate these responsibilities.
+Article 5(2) makes the controller responsible for demonstrating compliance:[^21] the participating organisation, and Business Monitor for benchmarking if it is controller there. The agreements and records proposed in Section 4 should allocate these responsibilities.
+
+[^21]: @GDPR, art. 5(2).
 
 # On Which Legal Basis?
 
@@ -159,11 +195,23 @@ The risks identified in Section 2 lead to five measures.
 
 *Tie retention to purpose.* A written schedule should set a period for each data layer. Identification data and the mapping are deleted after the last follow-up wave and the deletion is logged; analytical data have a defined maximum period and periodic review.
 
-*Separate and protect identity data.* Identity data and the mapping are stored apart from the analytical dataset, encrypted, with the key held separately and access restricted by role and logged.^[@GDPR, art. 32(1)(a)-(b).]
+*Separate and protect identity data.* Identity data and the mapping are stored apart from the analytical dataset, encrypted, with the key held separately and access restricted by role and logged.[^22]
 
-*Prevent re-identification.* A minimum cohort size applies to every benchmark output, small groups are suppressed, and the eight-participant threshold of the original design is tested for sufficiency.^[@BusinessMonitor2026, pp. 13-14.]
+[^22]: @GDPR, art. 32(1)(a)-(b).
 
-*Document the processing.* Data protection by design and by default,^[@GDPR, art. 25(1)-(2).] a processor agreement between each organisation and Business Monitor,^[@GDPR, art. 28(3).] records of processing,^[@GDPR, art. 30.] and a documented DPIA screening before operation,^[@GDPR, art. 35.] because employee data from several organisations are combined.
+*Prevent re-identification.* A minimum cohort size applies to every benchmark output, small groups are suppressed, and the eight-participant threshold of the original design is tested for sufficiency.[^23]
+
+[^23]: @BusinessMonitor2026, pp. 13-14.
+
+*Document the processing.* Data protection by design and by default,[^24] a processor agreement between each organisation and Business Monitor,[^25] records of processing,[^26] and a documented DPIA screening before operation,[^27] because employee data from several organisations are combined.
+
+[^24]: @GDPR, art. 25(1)-(2).
+
+[^25]: @GDPR, art. 28(3).
+
+[^26]: @GDPR, art. 30.
+
+[^27]: @GDPR, art. 35.
 
 ## Conclusion on compliance
 
