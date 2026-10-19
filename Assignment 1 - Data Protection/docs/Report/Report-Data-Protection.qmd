@@ -72,7 +72,7 @@ Programme-level results support cross-organisational benchmarking, consistent wi
 
 ## Data subjects and applicable regime
 
-The data subjects are the employees who attend the learning programmes evaluated through the LBT. Their contact details are personal data, as are their pseudonymised survey responses and learning measurements. Whether pseudonymised data are personal data depends on whether the party processing them has means reasonably likely to re-identify the individual.[^10] Under the assumed operational scenario, Business Monitor would hold the mapping during the survey cycle and the employer knows who attended, so that is the case here. The GDPR therefore applies to the operational scenario, but not to the synthetic-data MVP. No special-category data are intended to be collected (Section 3). The roles differ per purpose and are reasoned in Sect
+The data subjects are the employees who attend the learning programmes evaluated through the LBT. Their contact details are personal data, as are their pseudonymised survey responses and learning measurements. Whether pseudonymised data are personal data depends on whether the party processing them has means reasonably likely to re-identify the individual.[^10] Under the assumed operational scenario, Business Monitor would hold the mapping during the survey cycle and the employer knows who attended, so that is the case here. The GDPR therefore applies to the operational scenario, but not to the synthetic-data MVP. No special-category data are intended to be collected (Section 3). The roles differ per purpose and are reasoned in Section 3.1.
 
 [^10]: [@GDPR, arts. 4(1) and 4(5) and recital 26; @EDPSvSRB2025, paras. 85-87]
 
