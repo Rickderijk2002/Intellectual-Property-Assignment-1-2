@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Group 16">
+
+<title>report-data-protection</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Report-Data-Protection_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Report-Data-Protection_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Report-Data-Protection_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Report-Data-Protection_files/libs/quarto-html/popper.min.js"></script>
+<script src="Report-Data-Protection_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Report-Data-Protection_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Report-Data-Protection_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Report-Data-Protection_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Report-Data-Protection_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Report-Data-Protection_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Report-Data-Protection_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Report Data Protection for Business Monitor</h1>
+<p class="subtitle lead">JM0160 Intellectual Property and Privacy, Assignment #1: Privacy &amp; Data Protection Law</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  
+</nav>
+<hr>
+<p><strong>Total word count (Sections 1 to 4, excluding footnotes):</strong> 2640</p>
+<section id="introduction-and-description" class="level1">
+<h1>Introduction and Description</h1>
+<section id="learning-benchmarking-tool" class="level2">
+<h2 class="anchored" data-anchor-id="learning-benchmarking-tool">Learning Benchmarking Tool</h2>
+<p>Business Monitor developed the Learning Benchmarking Tool (LBT) to evaluate and compare organisational learning programmes using the four Kirkpatrick levels: Reaction (L1), Learning (L2), Behaviour (L3), and Results (L4).<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>The original LBT is a proof of concept based on fully synthetic programme- and participant-level data, structured for future use with real organisational data.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> The MVP demonstrates KPI calculation, benchmarking, and exploratory predictive modelling without processing real participant data. Piloting with real organisational data is identified as a next step.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>This assessment considers an operational scenario in which Business Monitor administers participant surveys on behalf of participating organisations. This is an assumption: the original report envisages organisations submitting aggregated or pseudonymised data and does not specify that Business Monitor administers surveys.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> Under this assumed scenario, Business Monitor would initially process identifiable contact information to invite participants and manage surveys. After collection, participant-level survey and learning data would be pseudonymised for analysis.</p>
+<p>The identity-to-pseudonym mapping would be retained only as needed for the survey cycle, including Level 3 follow-up measurements. Identifying information and the mapping would be stored separately from analytical data, with restricted access.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> These safeguards are assumed for this assessment and would need to be implemented before operational deployment. Identifiers and mappings would be deleted when re-identification is no longer necessary, according to a documented retention policy.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<p>Pseudonymised data are used to calculate programme-level KPIs across L1–L4. The original MVP includes an exploratory prediction model using synthetic data.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> In the assessed operational scenario, predictive analytics remain limited to programme-level outcomes and KPIs, not individual employee performance, behaviour, or capabilities. This is an assumption: the original model only demonstrates exploratory scenario predictions, not validated predictions on real organisational data.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+<p>Programme-level results support cross-organisational benchmarking, consistent with Business Monitor’s proposed role as a neutral benchmarking hub.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> Customer-facing outputs are intended to be aggregated and anonymised.</p>
+</section>
+<section id="data-subjects-and-applicable-regime" class="level2">
+<h2 class="anchored" data-anchor-id="data-subjects-and-applicable-regime">Data subjects and applicable regime</h2>
+<p>The data subjects are the employees who attend the learning programmes evaluated through the LBT. Their contact details are personal data, as are their pseudonymised survey responses and learning measurements. Whether pseudonymised data are personal data depends on whether the party processing them has means reasonably likely to re-identify the individual.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Under the assumed operational scenario, Business Monitor would hold the mapping during the survey cycle and the employer knows who attended, so that is the case here. The GDPR therefore applies to the operational scenario, but not to the synthetic-data MVP. No special-category data are intended to be collected (Section 3). The roles differ per purpose and are reasoned in Sect</p>
+</section>
+</section>
+<section id="how-are-the-data-processed" class="level1">
+<h1>How Are the Data Processed?</h1>
+<section id="purpose-of-the-processing" class="level2">
+<h2 class="anchored" data-anchor-id="purpose-of-the-processing">Purpose of the processing</h2>
+<p>The LBT involves five processing operations: survey administration, participant-level analysis, programme-level KPI calculation (L1–L4), programme-level predictive analytics, and cross-organisational benchmarking.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> Under the assumed operational scenario, the first four support each organisation’s programme evaluation, with Business Monitor acting as processor on its behalf. Benchmarking additionally serves Business Monitor’s own service across organisations.</p>
+</section>
+<section id="application-of-the-data-protection-principles" class="level2">
+<h2 class="anchored" data-anchor-id="application-of-the-data-protection-principles">Application of the data protection principles</h2>
+<section id="lawfulness-fairness-and-transparency" class="level3">
+<h3 class="anchored" data-anchor-id="lawfulness-fairness-and-transparency">Lawfulness, fairness and transparency</h3>
+<p>Lawfulness is examined in Section 3. Fairness and transparency require participants to understand how their responses are used, particularly for commercial benchmarking.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> Where contact details come from employers, Article 14 requires information no later than the first communication, subject to applicable exceptions; survey responses collected directly fall under Article 13.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> Notices must identify the relevant controllers and purposes in clear language, including any further processing.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
+</section>
+<section id="purpose-limitation" class="level3">
+<h3 class="anchored" data-anchor-id="purpose-limitation">Purpose limitation</h3>
+<p>Article 5(1)(b) requires specified, legitimate purposes and restricts incompatible further processing.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> Benchmarking introduces a distinct commercial purpose beyond an employer’s programme evaluation. Under Article 6(4), compatibility depends on the relationship between purposes, collection context, participants’ reasonable expectations, data sensitivity, consequences and safeguards.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></p>
+<p>Statistical processing receives special treatment under Articles 5(1)(b) and 89(1), while Recital 162 describes aggregate statistical results not used for individual decisions.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> However, statistical safeguards do not automatically authorise commercial reuse. Benchmarking therefore requires a documented assessment of purpose compatibility and an appropriate legal basis.</p>
+</section>
+<section id="data-minimisation" class="level3">
+<h3 class="anchored" data-anchor-id="data-minimisation">Data minimisation</h3>
+<p>Article 5(1)(c) restricts collection to necessary data.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a> Direct identifiers serve survey administration, while analysis uses pseudonymised responses. The original dataset includes location, manager-support ratings and promotion flags.<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a> Their necessity must be justified individually; programme-level promotion counts may reduce the need to retain individual flags. Free-text responses should be avoided where unnecessary.</p>
+</section>
+<section id="accuracy" class="level3">
+<h3 class="anchored" data-anchor-id="accuracy">Accuracy</h3>
+<p>Article 5(1)(d) requires accuracy and appropriate updating.<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a> The LBT relies partly on self-reported measures, which the original report identifies as vulnerable to response bias.<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a> Follow-up records must also remain correctly linked to their pseudonymous identifiers.</p>
+</section>
+<section id="storage-limitation" class="level3">
+<h3 class="anchored" data-anchor-id="storage-limitation">Storage limitation</h3>
+<p>Article 5(1)(e) limits retention to what is necessary.<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a> Under the assumed operational scenario, identification data and re-identification mappings would be deleted once the necessary follow-ups are complete and re-identification is no longer required. Analytical data remain personal data wherever re-identification is reasonably possible, even after deleting the mapping.<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a> Small cohorts and contextual variables increase this risk. The MVP’s eight-participant threshold is a data-quality criterion, not proof of anonymity.<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a></p>
+</section>
+<section id="integrity-and-confidentiality" class="level3">
+<h3 class="anchored" data-anchor-id="integrity-and-confidentiality">Integrity and confidentiality</h3>
+<p>Articles 5(1)(f) and 32 require appropriate security.<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a> Identifiers and re-identification mappings must remain separate from analytical data, with access restricted to authorised survey personnel.</p>
+</section>
+<section id="accountability" class="level3">
+<h3 class="anchored" data-anchor-id="accountability">Accountability</h3>
+<p>Article 5(2) requires controllers to demonstrate compliance.<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a> Participating organisations remain accountable for their evaluation purposes; Business Monitor must demonstrate compliance where it independently determines benchmarking purposes. Section 4 addresses the necessary agreements and records.</p>
+</section>
+</section>
+</section>
+<section id="on-which-legal-basis" class="level1">
+<h1>On Which Legal Basis?</h1>
+<section id="the-processing-ground-relied-on" class="level2">
+<h2 class="anchored" data-anchor-id="the-processing-ground-relied-on">The processing ground relied on</h2>
+<p>The operational LBT involves two purposes requiring separate legal assessments, and the roles follow from who determines the purposes and means of each.<a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a> A controller determines why and how personal data are processed; a processor acts only on the controller’s instructions. In the operational LBT scenario, Business Monitor administers participant surveys and analyses the responses to evaluate learning programmes. For this assessment, it is assumed that participating organisations determine the purpose and essential means of evaluating their own programmes, with Business Monitor acting as processor on their behalf and on their documented instructions.</p>
+<p>Benchmarking serves Business Monitor’s own commercial service. A processor that determines purposes and means is considered a controller for that processing,<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a> so Business Monitor acts as controller for benchmarking where it designs the service and decides how the data are combined. Roles follow from the actual influence on purposes and means, not from the contract label.<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a> If the participating organisation co-determines these purposes and means, both are joint controllers and must allocate responsibilities between them. Joint control is assessed per operation: a party is a joint controller only for the operations whose purposes and means it determines together with another.<a href="#fn30" class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a> If it merely supplies data to a service that Business Monitor designs, they are separate controllers, and the organisation’s disclosure of data for that purpose needs its own legal basis.<a href="#fn31" class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a></p>
+<p>For both purposes, legitimate interests under Article 6(1)(f) GDPR is the proposed legal basis. It requires three cumulative conditions: a legitimate interest, necessity of processing, and a balancing assessment demonstrating that participants’ interests and fundamental rights do not override that interest.<a href="#fn32" class="footnote-ref" id="fnref32" role="doc-noteref"><sup>32</sup></a> Necessity is interpreted strictly: the controller must check whether the aim can reasonably be achieved by less intrusive means. Recital 47 specifically requires consideration of participants’ reasonable expectations. Consequently, legitimate interests cannot be presumed valid merely because the processing benefits the organisation.</p>
+</section>
+<section id="application-of-its-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="application-of-its-criteria">Application of its criteria</h2>
+<section id="organisational-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="organisational-evaluation">Organisational evaluation</h3>
+<p><strong>Legitimate interest.</strong> Participating organisations have a legitimate interest in assessing learning effectiveness and improving training investments. Measuring satisfaction, knowledge acquisition, behavioural application and organisational outcomes supports this objective.</p>
+<p><strong>Necessity.</strong> Contact details may be needed for survey invitations and follow-ups, while pseudonymised responses may support longitudinal analysis and programme-level KPI calculation. However, necessity must be established for each data category. Anonymous surveys or aggregated measurements may achieve some evaluation objectives with less interference, although they may not support participant-linked follow-ups. The organisation must therefore demonstrate why its chosen data are required rather than merely useful.<a href="#fn33" class="footnote-ref" id="fnref33" role="doc-noteref"><sup>33</sup></a></p>
+<p><strong>Balancing.</strong> Employees may reasonably expect evaluation of training they attended, supporting the employer’s interest. Nevertheless, the employment relationship creates a power imbalance. Responses concerning behaviour, managerial support or promotion could also affect employees if accessed or interpreted individually. Pseudonymisation, restricted access, limited retention and programme-level reporting reduce these risks but do not eliminate them.</p>
+<p>On these assumptions, legitimate interests may support organisational evaluation, provided participation requirements, data necessity and safeguards are assessed and documented. Individual employee assessment or employment decisions would require a separate assessment.</p>
+</section>
+<section id="business-monitors-benchmarking-service" class="level3">
+<h3 class="anchored" data-anchor-id="business-monitors-benchmarking-service">Business Monitor’s benchmarking service</h3>
+<p><strong>Legitimate interest.</strong> Business Monitor has a commercial interest in producing comparable learning-effectiveness benchmarks across participating organisations. A commercial interest can qualify under Article 6(1)(f), but does not automatically outweigh participants’ rights.<a href="#fn34" class="footnote-ref" id="fnref34" role="doc-noteref"><sup>34</sup></a></p>
+<p><strong>Necessity.</strong> Business Monitor must demonstrate why cross-organisational benchmarking requires personal data rather than anonymous programme-level indicators. Pseudonymised participant records may enable more detailed comparisons, but this does not establish their necessity. Where anonymous aggregated inputs can achieve the benchmarking purpose, processing participant-level personal data would be difficult to justify under Article 6(1)(f).<a href="#fn35" class="footnote-ref" id="fnref35" role="doc-noteref"><sup>35</sup></a></p>
+<p><strong>Balancing.</strong> Benchmarking creates a greater privacy concern than internal evaluation. Employees may expect their employer to assess training effectiveness, but not necessarily anticipate their responses contributing to another company’s commercial service. Small cohorts, contextual variables and organisational knowledge increase re-identification risks. Aggregation and pseudonymisation mitigate these risks, provided anonymity is assessed rather than assumed.</p>
+<p>Business Monitor should disclose the benchmarking purpose before processing, document the legitimate interests assessment, and ensure that benchmark outputs cannot reasonably identify participants. The Article 6(4) compatibility assessment discussed in Section 2 remains relevant where data are reused for a different purpose.<a href="#fn36" class="footnote-ref" id="fnref36" role="doc-noteref"><sup>36</sup></a></p>
+<p>On the present facts, legitimate interests for benchmarking is less securely established than for organisational evaluation. It remains conditional on demonstrating that personal data are necessary and that participants’ rights do not prevail.</p>
+</section>
+</section>
+<section id="problems-with-relying-on-this-ground" class="level2">
+<h2 class="anchored" data-anchor-id="problems-with-relying-on-this-ground">Problems with relying on this ground</h2>
+<p>The principal difficulty is demonstrating necessity and a favourable balancing outcome for both purposes, especially commercial benchmarking. Controllers must document their assessments rather than assume that pseudonymisation or transparency alone establishes lawfulness. Participants also have a right to object to processing based on Article 6(1)(f), subject to the conditions in Article 21.<a href="#fn37" class="footnote-ref" id="fnref37" role="doc-noteref"><sup>37</sup></a></p>
+<p>Other Article 6 grounds are less suitable on the stated facts. No specific legal obligation, vital interest or public task has been identified. Article 6(1)(b) concerns necessity for a contract with the data subject; the commercial agreement between Business Monitor and an employer does not itself establish this ground for employee data. Consent is theoretically possible but problematic in employment because it may not be freely given.<a href="#fn38" class="footnote-ref" id="fnref38" role="doc-noteref"><sup>38</sup></a></p>
+<p>The scenario does not intend to collect special-category data. Nevertheless, free-text responses could reveal health information or other categories protected by Article 9(1). In such cases, an Article 6 basis and a valid Article 9(2) exception would both be needed.<a href="#fn39" class="footnote-ref" id="fnref39" role="doc-noteref"><sup>39</sup></a> Explicit consent is one possible exception, but its validity is particularly difficult to establish in employment. Other exceptions depend on specific conditions and cannot be assumed applicable here. Avoiding unnecessary free-text fields and excluding special-category information is therefore preferable.</p>
+<p>Overall, Article 6(1)(f) is a plausible basis for organisational evaluation, subject to a documented assessment. For Business Monitor’s benchmarking service, the justification remains uncertain unless the necessity of personal-data processing, compatibility of purposes and effective safeguards can be demonstrated. Anonymous programme-level inputs offer a less intrusive alternative.</p>
+</section>
+</section>
+<section id="advice" class="level1">
+<h1>Advice</h1>
+<section id="alternatives-to-personal-data" class="level2">
+<h2 class="anchored" data-anchor-id="alternatives-to-personal-data">Alternatives to personal data</h2>
+<p>Business Monitor should minimise personal data processing by using anonymous programme-level data wherever feasible. Participant-level information may be necessary for survey administration, longitudinal follow-ups and calculating certain learning indicators, but directly identifiable records are not required for programme-level predictions or customer-facing benchmarks.<a href="#fn40" class="footnote-ref" id="fnref40" role="doc-noteref"><sup>40</sup></a> Business Monitor should assess whether participating organisations can calculate and submit anonymous programme-level indicators instead of transferring participant records.</p>
+<p>Where participant-level processing remains necessary, survey responses should be pseudonymised as early as practicable. Identity data and re-identification mappings must be stored separately from analytical records, with access restricted to authorised personnel.<a href="#fn41" class="footnote-ref" id="fnref41" role="doc-noteref"><sup>41</sup></a> The mapping should be deleted once the survey cycle, including necessary follow-ups, is complete and re-identification is no longer required.<a href="#fn42" class="footnote-ref" id="fnref42" role="doc-noteref"><sup>42</sup></a> However, deletion does not automatically anonymise the remaining records: contextual information may still permit identification.</p>
+<p>Unnecessary demographic attributes and unrestricted free-text responses should be avoided. Before releasing benchmark results, Business Monitor must assess whether participants could be identified through small cohorts, rare characteristics or combinations of variables. Aggregation alone does not guarantee anonymity.<a href="#fn43" class="footnote-ref" id="fnref43" role="doc-noteref"><sup>43</sup></a> Where genuinely anonymous inputs can achieve the benchmarking purpose, they offer a less intrusive alternative to processing personal data.</p>
+<p>For benchmarking, Business Monitor could therefore act as the participating organisation’s processor and compute anonymous programme-level aggregates on its instructions, so that only those aggregates enter the benchmark pool. Anonymous data fall outside the GDPR,<a href="#fn44" class="footnote-ref" id="fnref44" role="doc-noteref"><sup>44</sup></a> and the benchmark itself would then need no separate legal basis. The anonymisation step is itself processing of personal data and must be covered by the organisation’s legal basis and instructions,<a href="#fn45" class="footnote-ref" id="fnref45" role="doc-noteref"><sup>45</sup></a> and the anonymity of its output must be tested as described above.</p>
+</section>
+<section id="technical-and-organisational-measures" class="level2">
+<h2 class="anchored" data-anchor-id="technical-and-organisational-measures">Technical and organisational measures</h2>
+<p>The operational LBT requires safeguards addressing transparency, retention, security, re-identification and accountability.</p>
+<p>First, participating organisations and Business Monitor should clearly distinguish organisational evaluation from cross-organisational benchmarking in their privacy notices. Participants must understand the relevant purposes, controller identities, data categories and intended uses before the applicable processing begins. The commercial benchmarking purpose should not be concealed within a general description of employee training evaluation.<a href="#fn46" class="footnote-ref" id="fnref46" role="doc-noteref"><sup>46</sup></a></p>
+<p>Second, a documented retention schedule should define separate periods for identification data, re-identification mappings, pseudonymised analytical records and programme-level outputs. Identifiers and mappings should be deleted when the final necessary follow-up is complete, with deletion recorded. Analytical records require independently justified retention periods and periodic review. Anonymous outputs may be retained outside the GDPR only where anonymity has been adequately established.</p>
+<p>Third, Business Monitor should implement encryption, role-based access controls and access logging. Identifying information and re-identification mappings must remain separate from analytical datasets. Re-identification access should be restricted to personnel administering surveys, while analysts should receive only the data necessary for their tasks.<a href="#fn47" class="footnote-ref" id="fnref47" role="doc-noteref"><sup>47</sup></a></p>
+<p>Fourth, benchmark disclosure controls should include minimum cohort sizes, suppression of small groups and checks for identifying combinations of attributes. The original LBT uses eight participants as a minimum benchmark-readiness criterion, but this was designed for data quality rather than anonymity.<a href="#fn48" class="footnote-ref" id="fnref48" role="doc-noteref"><sup>48</sup></a> The threshold must therefore be evaluated against actual re-identification risks, including risks in programme-level predictive outputs.</p>
+<p>Finally, accountability arrangements must be established before operational deployment. These include documented controller–processor responsibilities, Article 28 agreements for processing on behalf of participating organisations, records of processing activities and data protection by design and by default.<a href="#fn49" class="footnote-ref" id="fnref49" role="doc-noteref"><sup>49</sup></a> Business Monitor and participating organisations should also assess whether a Data Protection Impact Assessment is required, considering the nature, scale and risks of employee-data processing.<a href="#fn50" class="footnote-ref" id="fnref50" role="doc-noteref"><sup>50</sup></a> A DPIA is mandatory where processing is likely to result in a high risk to individuals.</p>
+</section>
+<section id="conclusion-on-compliance" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-on-compliance">Conclusion on compliance</h2>
+<p>The current LBT proof of concept uses synthetic data and does not demonstrate GDPR compliance for an operational service involving real participants. Such deployment would require a documented legal and organisational framework before personal data are processed. On the present facts, the operational LBT cannot yet be regarded as GDPR compliant. Organisational evaluation can be made compliant through a documented legitimate interests assessment, transparency and the safeguards in Section 4. Cross-organisational benchmarking remains doubtful unless necessity and a favourable balance are shown; otherwise it should rely on anonymous programme-level inputs.</p>
+<p>Two purposes must be assessed separately, with different roles (Section 3.1). Under the assumed operational scenario, participating organisations would act as controllers for their own programme evaluations, with Business Monitor acting as processor on their documented instructions. For cross-organisational benchmarking, Business Monitor would act as an independent controller where it determines the purposes and essential means of that processing. Participating organisations disclosing personal data for this purpose would remain responsible for the lawfulness of their disclosure. Joint controllership would arise only where Business Monitor and participating organisations jointly determine the purposes and essential means of the relevant processing.<a href="#fn51" class="footnote-ref" id="fnref51" role="doc-noteref"><sup>51</sup></a> The actual roles and responsibilities must be established and documented for each processing activity.</p>
+<p>Legitimate interests under Article 6(1)(f) is the proposed legal basis, but its suitability remains conditional.<a href="#fn52" class="footnote-ref" id="fnref52" role="doc-noteref"><sup>52</sup></a> Organisational evaluation may be justified where processing is necessary and proportionate. Commercial benchmarking presents a greater challenge because participants may not reasonably expect their responses to support a service across organisations. A separate, documented assessment must establish necessity, purpose compatibility and a favourable balancing outcome. Transparency and safeguards cannot independently establish lawfulness.</p>
+<p>Special-category data should not be collected unless an applicable Article 9 exception and a valid Article 6 basis have been established.<a href="#fn53" class="footnote-ref" id="fnref53" role="doc-noteref"><sup>53</sup></a> Survey design should minimise inadvertent collection.</p>
+<p>The recommended approach is conditional deployment. Real participant data should be processed only after responsibilities, lawful bases, retention rules, access controls and disclosure safeguards have been established. If these conditions cannot be met, Business Monitor should restrict the affected activities to genuinely anonymous programme-level data or postpone deployment.</p>
+</section>
+</section>
+<section id="technology-statement" class="level1 unnumbered">
+<h1 class="unnumbered">Technology Statement</h1>
+<p>During the preparation of this work, we used ChatGPT (GPT-5) and Claude (Sonnet 5.5) in order to improve documentation quality, help with reducing the number of words and enhance writing clarity. The following parts of the assignment were affected by AI tool usage: all sections. After using this tool/service, Rick de Rijk, Gilbert Laanen, Stefan Vonk, Thom Verzantvoort, Patryck Grodek and Tycho van Rooij evaluated the validity of the tool’s outputs, including the sources that generative AI tools have used, and edited the content as needed. As a consequence, Rick de Rijk, Gilbert Laanen, Stefan Vonk, Thom Verzantvoort, Patryck Grodek and Tycho van Rooij take full responsibility for the content of their work.</p>
+</section>
+<section id="references" class="level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><span class="citation" data-cites="BusinessMonitor2026">[@BusinessMonitor2026, pp. 4, 11-12]</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><span class="citation" data-cites="BusinessMonitor2026">[@BusinessMonitor2026, pp. 4, 10]</span><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><span class="citation" data-cites="BusinessMonitor2026">[@BusinessMonitor2026, pp. 27-29]</span><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><span class="citation" data-cites="BusinessMonitor2026">[@BusinessMonitor2026, p. 29]</span><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 4(5), 25 and 32]</span><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 5(1)(e)]</span><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p><span class="citation" data-cites="BusinessMonitor2026">[@BusinessMonitor2026, pp. 12, 27-28]</span><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p><span class="citation" data-cites="BusinessMonitor2026">[@BusinessMonitor2026, pp. 12, 27-28]</span><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p><span class="citation" data-cites="BusinessMonitor2026">[@BusinessMonitor2026, pp. 6-7]</span><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p><span class="citation" data-cites="GDPR EDPSvSRB2025">[@GDPR, arts. 4(1) and 4(5) and recital 26; @EDPSvSRB2025, paras. 85-87]</span><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Participant-level analysis and KPI calculation are distinguished because only the former directly processes participant-level personal data.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 5(1)(a) and recital 39]</span><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 13(1), 14(1) and 14(3)(b)]</span><a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 12(1), 13(1)(a) and (c), 13(3), 14(1)(a) and (c)]</span><a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 5(1)(b)]</span><a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 6(4)]</span><a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 5(1)(b) and 89(1), recital 162]</span><a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 5(1)(c)]</span><a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p><span class="citation" data-cites="BusinessMonitor2026">[@BusinessMonitor2026, p. 33]</span><a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 5(1)(d)]</span><a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p><span class="citation" data-cites="BusinessMonitor2026">[@BusinessMonitor2026, pp. 17-18]</span><a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 5(1)(e)]</span><a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p><span class="citation" data-cites="GDPR">[@GDPR, recital 26]</span><a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p><span class="citation" data-cites="BusinessMonitor2026">[@BusinessMonitor2026, pp. 13-14]</span><a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn25"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 4(5), 5(1)(f) and 32(1)]</span><a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn26"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 5(2)]</span><a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn27"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 4(7), 4(8), 26(1), 28(3) and 28(10)]</span><a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn28"><p><span class="citation" data-cites="GDPR EDPB2021">[@GDPR, art. 28(10); @EDPB2021, Part II, para. 150]</span><a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn29"><p><span class="citation" data-cites="EDPB2021">[@EDPB2021, Part I, para. 52]</span><a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn30"><p><span class="citation" data-cites="GDPR FashionID2019 EDPB2021">[@GDPR, art. 26(1); @FashionID2019, para. 74; @EDPB2021, Part I, paras. 51-53]</span><a href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn31"><p><span class="citation" data-cites="EDPB2021">[@EDPB2021, Part I, para. 70]</span><a href="#fnref31" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn32"><p><span class="citation" data-cites="GDPR TK2019">[@GDPR, art. 6(1)(f) and recital 47; @TK2019, paras. 40 and 46-51, decided under the equivalent provision of Directive 95/46]</span><a href="#fnref32" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn33"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 5(1)(c) and art. 6(1)(f)]</span><a href="#fnref33" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn34"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 6(1)(f) and recital 47]</span><a href="#fnref34" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn35"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 5(1)(c) and 6(1)(f)]</span><a href="#fnref35" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn36"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 6(4) and recital 26]</span><a href="#fnref36" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn37"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 21(1)]</span><a href="#fnref37" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn38"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 6(1)(a), 6(1)(b) and 7(4), recital 43]</span><a href="#fnref38" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn39"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 6(1) and 9(1)-(2)]</span><a href="#fnref39" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn40"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 5(1)(c)]</span><a href="#fnref40" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn41"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 4(5)]</span><a href="#fnref41" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn42"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 5(1)(e)]</span><a href="#fnref42" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn43"><p><span class="citation" data-cites="GDPR">[@GDPR, recital 26]</span><a href="#fnref43" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn44"><p><span class="citation" data-cites="GDPR">[@GDPR, recital 26]</span><a href="#fnref44" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn45"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 4(2) and 28(3)]</span><a href="#fnref45" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn46"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 5(1)(a), 12-14]</span><a href="#fnref46" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn47"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 4(5) and 32(1)(a)-(b)]</span><a href="#fnref47" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn48"><p><span class="citation" data-cites="BusinessMonitor2026">[@BusinessMonitor2026, pp. 13-14]</span><a href="#fnref48" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn49"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 25, 28(3) and 30]</span><a href="#fnref49" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn50"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 35]</span><a href="#fnref50" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn51"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 4(7), 4(8), 26 and 28]</span><a href="#fnref51" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn52"><p><span class="citation" data-cites="GDPR">[@GDPR, art. 6(1)(f) and recital 47]</span><a href="#fnref52" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn53"><p><span class="citation" data-cites="GDPR">[@GDPR, arts. 6(1) and 9(1)-(2)]</span><a href="#fnref53" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
