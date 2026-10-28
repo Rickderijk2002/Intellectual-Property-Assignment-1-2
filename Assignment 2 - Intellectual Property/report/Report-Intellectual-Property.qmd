@@ -1,0 +1,150 @@
+---
+title: "Report Intellectual Property Law for the Intervention Recommender (Heijmans Vastgoed)"
+author: "Group 16: Rick de Rijk, Gilbert Laanen, Stefan Vonk, Thom Verzantvoort, Patryck Grodek, Tycho van Rooij"
+subtitle: "JM0160 Intellectual Property and Privacy, Assignment #2: Intellectual Property Law"
+format:
+  pdf:
+    include-in-header:
+      text: |
+        \usepackage{placeins}
+geometry:
+  - top=1.5cm
+  - bottom=1.8cm
+  - left=1.8cm
+  - right=1.8cm
+editor: visual
+toc: true
+number-sections: true
+bibliography: references.bib
+link-citations: true
+indent: true
+---
+
+**Group number:** 16
+
+**Student numbers:** \[ add per group member \]
+
+**Total word count (Sections 1 to 4, excluding footnotes):** \[ \]
+
+\newpage
+
+<!--
+OUTLINE ONLY. Word ranges follow the suggested template in the brief (guide, not binding).
+Total limit: 3000 words excl. footnotes. Legal sources listed per subsection are candidates:
+verify each one (and the Dutch implementing provisions) before citing. Remove these comments
+before submission.
+-->
+
+# Brief Statement of the Relevant Facts of the Project
+
+<!-- 200-400 words. Draft text: docs/case_description.md -->
+
+## The Intervention Recommender
+
+<!-- Real facts only: Heijmans Vastgoed, impact scan, decision-support tool, weighted scoring
+model, structured intervention database, AI-generated baseline replaced by manual review.
+Footnotes to the Heijmans final report [@Heijmans2026]. -->
+
+## Assumed operational scenario
+
+<!-- The four marked assumptions: (1) external consultancy, contract silent on IP;
+(2) Heijmans' list and scan are confidential; (3) third-party sources incl. automated collection
+from an online library, terms unchecked; (4) reuse for other clients. -->
+
+# Analysis of IP Rights Protection
+
+<!-- 300-600 words. For each object: apply the criteria, then conclude (protected / not protected). -->
+
+## Heijmans' intervention list and the combined database
+
+<!-- Database copyright (Dir. 96/9/EC art. 3: author's own intellectual creation in selection or
+arrangement). Sui generis right (art. 7: substantial investment in obtaining, verifying or
+presenting; creating vs obtaining data). Candidate cases: Football Dataco, BHB v William Hill,
+Mediaprint. Dutch Databankenwet. Who is the maker of the combined database? -->
+
+## Scoring rationales, taxonomy, code and tool
+
+<!-- Copyright: originality (Infopaq), idea vs expression (SAS Institute v WPL), software
+(Dir. 2009/24/EC). Is the scoring method itself protectable? Likely only the expression. -->
+
+## The AI-generated baseline and human review
+
+<!-- Authorship requirement; protection of AI output without a human author; effect of the
+manual review and rescoring. -->
+
+## Trade secrets
+
+<!-- Dir. (EU) 2016/943 art. 2(1) and Dutch implementation: secret, commercial value, reasonable
+steps. Heijmans' list and scan; our own scoring logic. -->
+
+## Third-party sources
+
+<!-- Open data (licence terms, e.g. attribution) and the online intervention library
+(database rights and copyright of that rights holder). -->
+
+# Assessment of IP Law Implications
+
+<!-- 1000-1200 words, the largest section. -->
+
+## Can IP law form a barrier to the project?
+
+<!-- Rights of Heijmans over its list; need for a licence or assignment; third-party rights;
+effect on timing and feasibility. -->
+
+## Infringement risk
+
+### Reuse of Heijmans' list and database for other clients
+
+<!-- Extraction and re-utilisation (art. 7 Dir. 96/9/EC), substantial part, repeated and
+systematic extraction; copyright in the list; contractual limits. -->
+
+### Extraction from third-party databases
+
+<!-- Substantial part, lawful user (art. 8 / art. 6), exceptions available or not. -->
+
+### Trade secret misuse
+
+<!-- Acquisition, use or disclosure of the client's confidential information (Dir. 2016/943
+art. 4); effect of using it in a shared tool for other clients. -->
+
+## Data mining and breach of contract
+
+<!-- Required by the brief where data mining is involved. TDM exceptions (Dir. (EU) 2019/790
+arts. 3 and 4, Dutch implementation), rights-holder opt-out, website terms and conditions,
+contract overriding database-law freedoms (e.g. Ryanair v PR Aviation), technical access
+measures. How to reduce the risk. -->
+
+## Residual risk
+
+<!-- Say explicitly which risks remain under the current plan and what must change. If any part
+carries no real risk, say so and explain why (e.g. applicable exception). -->
+
+# Advice
+
+<!-- 500-800 words. -->
+
+## Contract with Heijmans
+
+<!-- Ownership and licence of the list, the combined database and the tool; permitted reuse;
+confidentiality; handling of derived data. -->
+
+## Lawful alternative sources
+
+<!-- Open data and open licences, licensed access or agreement with the rights holder, own
+creation from public primary sources, Heijmans-only data as fallback. For each: steps needed,
+risks and disadvantages. -->
+
+## Organisational and technical measures
+
+<!-- Separate client-specific data from the reusable database; access control and confidentiality;
+document human authorship and the source of each entry. -->
+
+## Conclusion and way ahead
+
+<!-- Prioritised steps, and a fallback if no agreement is reached. -->
+
+# Technology Statement {.unnumbered}
+
+During the preparation of this work, we used \[ NAME TOOL / SERVICE / VERSION \] in order to \[ REASON \]. The following parts of the assignment were affected by AI tool usage: \[ SECTIONS \]. After using this tool/service, \[ NAMES OF STUDENTS \] evaluated the validity of the tool's outputs, including the sources that generative AI tools have used, and edited the content as needed. As a consequence, \[ NAMES OF STUDENTS \] take(s) full responsibility for the content of their work.
+
+# References {.unnumbered}
