@@ -2,6 +2,9 @@
 ~$*.docx
 .DS_Store
 
+# Local editor settings (theme, etc.)
+.vscode/settings.json
+
 # Quarto intermediates (keep .qmd and the final .pdf)
 */docs/Report/*.tex
 */docs/Report/*_files/
