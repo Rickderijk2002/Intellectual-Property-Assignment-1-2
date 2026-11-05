@@ -7,7 +7,7 @@ author:
   - Gilbert Laanen
   - Stefan Vonk
   - Thom Verzantvoort
-  - Patryck Grodek
+  - Patryk Grodek
   - Tycho van Rooij
 format:
   pdf:
