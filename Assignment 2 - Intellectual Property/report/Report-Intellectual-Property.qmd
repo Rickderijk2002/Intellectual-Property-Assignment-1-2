@@ -1,7 +1,7 @@
 ---
 title: "Report Intellectual Property Law for the Intervention Recommender (Heijmans Vastgoed)"
 subtitle: "JM0160 Intellectual Property and Privacy, Assignment 2: Intellectual Property Law"
-wordcount: ""
+wordcount: "2.171"
 author:
   - Rick de Rijk
   - Gilbert Laanen
