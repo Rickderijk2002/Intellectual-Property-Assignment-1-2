@@ -45,7 +45,7 @@ before submission.
 
 ## The Intervention Recommender Tool for Heijmans Vastgoed
 
-Heijmans Vastgoed, a Dutch property developer, uses well-being impact scans to identify opportunities in neighborhoods. From these opportunities, interventions can be derived, such as what to change or what to built in the neighborhoods. The scans show opportunities but do not recommend which interventions fit. Our team developed an Intervention Recommender Tool to close this gap: a decision-support application that for a given neighborhood ranks well-being interventions using a transparent, weighted scoring model.[^1]
+Heijmans Vastgoed, a Dutch property developer, uses well-being impact scans to identify opportunities in neighborhoods. From these opportunities, interventions can be derived, such as what to change or what to build in the neighborhoods. The scans show opportunities but do not recommend which interventions fit. Our team developed an Intervention Recommender Tool to close this gap: a decision-support application that for a given neighborhood ranks well-being interventions using a transparent, weighted scoring model.[^1]
 
 [^1]: [@Heijmans2026, sections 1-3]
 
