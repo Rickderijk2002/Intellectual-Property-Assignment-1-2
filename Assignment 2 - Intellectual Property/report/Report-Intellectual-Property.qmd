@@ -72,7 +72,7 @@ Based on the case description above, this section tests five assets against each
 4.  The tool (source code and scoring model) (E)
 
 | Asset | Protected by | Rightholder |
-|:---|:---|:---|
+|:-----------------------|:-----------------------|:-----------------------|
 | \(A\) Heijmans' intervention list | Sui generis right; trade secret | Heijmans |
 | \(B\) Impact scans | Copyright; trade secret | Heijmans |
 | \(C\) Third-party library | Sui generis right | Library owner |
@@ -127,54 +127,91 @@ Information is a trade secret if it is secret, has commercial value because it i
 
 # Assessment of Barriers and Infringement
 
-```{=html}
-<!-- ~1100 words: Heijmans' list and scans ~150, scraping ~450, reuse ~400, overall ~100.
-Per source, in a fixed order: conclusion, act, right engaged, exception or licence, contract, residual risk. -->
-```
-
 ## Using Heijmans’ list and scans
 
--   Conclusion: no real risk within the Heijmans project.
+Within the Heijmans project, using the intervention list (A) and the impact scans (B) carries no real risk. This is because the consultancy performs two acts: it copies the list into the combined database, and it derives interventions from the findings of the scans.
 
--   Act: copying the list (A) into the database and deriving interventions from the scans (B).
+Copying the entire list is an extraction of the whole database, which normally requires the maker's authorisation.[^16] Heijmans, which is the maker in this case, supplied the list precisely so that it could be built into the tool. That authorisation is therefore given, at least for the purpose of the project.
 
--   Rights engaged (Sections 2.1 and 2.3): sui generis in A, trade secret in A and B (Art. 4 TSD: use in breach of a duty limiting use).
+[^16]: Art. 7(1) [@DatabaseDirective1996].
 
--   Copyright in B (one sentence): the tool uses the findings, not the expression, so copyright is not infringed.
+The same reasoning applies to Heijmans' trade secret in A and B. The consultancy acquired the information with the consent of Heijmans, this means that the acquisition is lawful.[^17] Using a lawfully acquired trade secret only becomes unlawful when it breaches a contractual or other duty to limit that use.[^18] The confidentiality clause limits use to the project, and the consultancy stays within that limit.
 
--   Contract: the confidentiality clause allows use for the project only. Use beyond it is covered under reuse.
+[^17]: Art. 3(1)(d) [@TradeSecretsDirective2016].
+
+[^18]: Art. 4(3)(c) [@TradeSecretsDirective2016].
+
+Copyright in the scans is not engaged. The tool takes over what the scans found, not how their authors expressed it, and copyright protects only the expression of a work, not facts or data as such.[^19] (Miss hier nog wat meer bijzoeken?)
+
+[^19]: Recital 45 [@DatabaseDirective1996]; [@Infopaq2009].
+
+The real limit lies at the edge of the project. Any use of the list or scans for other clients or products falls outside the confidentiality clause and is assessed in depth in @sec-reuse.
 
 ## Scraping the third-party library
 
--   Conclusion: infringement and breach of contract.
+As planned, scraping the library infringes its maker's sui generis right and breaches the terms of use.
 
--   Act: automated reproduction and extraction, then analysis.
+This is mainly because the scraper copies interventions in bulk into the consultancy's dataset. This is an extraction: a transfer of the contents of a database to another medium,[^20] for which physical copying is not even required.[^21] Because the goal is to fill gaps across the database, the extraction is substantial in quantity. Furthermore the extraction is also substantial in quality, because it takes the contents in which the editorial team invested by collecting, checking and updating them.[^22] Another possible option which is spreading the scraping over many small runs does not suffice to mitigate the infringement: as repeated and systematic extraction of insubstantial parts that conflicts with normal exploitation of the database is prohibited as well.[^23]
 
--   Rights engaged: sui generis extraction (Art. 7(1) DD), including repeated and systematic extraction of insubstantial parts (Art. 7(5) DD).
+[^20]: Art. 7(2)(a) [@DatabaseDirective1996].
 
--   Exceptions: lawful user (Arts. 6(1) and 8(1) DD; Art. 15 DD makes them mandatory) does not help with substantial extraction; Art. 3 DSM does not apply to a commercial consultancy (one sentence); Art. 4 DSM requires lawful access, no opt-out and storage only as long as needed.
+[^21]: [@Directmedia2008].
 
--   Contract (data-mining analysis): the terms ban automated access and extraction. Because the library is protected (Section 2.1), the opt-out in the terms removes Art. 4 DSM. Optional clause: an opt-out in natural language may be enough (*Kneschke v LAION*).
+[^22]: Art. 7(1) [@DatabaseDirective1996]; [@BHB2004].
 
--   Sensitivity (one sentence, *Ryanair*): if the library were not protected, only the terms would limit use.
+[^23]: Art. 7(5) [@DatabaseDirective1996].
 
--   Residual risk: a sui generis claim and a contract claim against the consultancy.
+The exceptions in the Database Directive do not help. As a registered user, the consultancy is a lawful user and is allowed to extract insubstantial parts, a right the maker cannot override by contract,[^24] but this does not cover bulk extraction. The exception for teaching and scientific research is limited to non-commercial purposes. Which is something the consultancy does not do[^25]. In addition, the other data mining exception for scientific research is reserved for research organisations and cultural heritage institutions, not a commercial consultancy.[^26]
 
-## Commercial reuse
+[^24]: Arts. 8(1) and 15 [@DatabaseDirective1996].
 
--   Conclusion: the main barrier, because each party needs the other's rights. Start from the ownership found in Section 2, without re-deciding it.
+[^25]: Art. 9(b) [@DatabaseDirective1996].
 
--   Heijmans offering the tool to third parties: reproducing and distributing the code needs a licence from the consultancy (copyright in E); disclosing the scoring model may breach the consultancy's trade secret and the mutual confidentiality clause.
+[^26]: Arts. 2(1) and 3 [@DSMDirective2019].
 
--   The consultancy reusing generic parts: fine for its own code and model; reusing D infringes Heijmans' sui generis right, and using A breaches its trade secret.
+That leaves the general data mining exception, which allows anyone with lawful access to reproduce and extract contents for data mining, for any purpose. But as long as the copies are kept only as long as necessary.[^27] The consultancy has lawful access through its account. However, the maker can opt out by expressly reserving its rights. For content made publicly available online, the reservation must be machine-readable; in other cases, a reservation in a contract or unilateral declaration is deemed good enough.[^28] Access to the library depends on registering and accepting the terms of use, and those terms prohibit automated access and extraction. The reservation is therefore valid, and the exception is unavailable. Unlike the research exception, the general exception can be overridden by contract.[^29]
 
--   Scraped library content passing to Heijmans: re-utilisation (Art. 7(2)(b) DD). The library owner has a sui generis claim against both, but a contract claim only against the consultancy, since Heijmans never accepted the terms.
+[^27]: Art. 4(1)–(2) [@DSMDirective2019].
 
--   Residual risk: dispute over who made D (Heijmans commissioned the tool, not the database), and the library owner's claims.
+[^28]: Art. 4(3) and Recital 18 [@DSMDirective2019].
+
+[^29]: Art. 7(1) [@DSMDirective2019].
+
+The terms of use also create a separate contractual risk. By accepting them, the consultancy agreed not to scrape, and this commitment holds regardless of the outcome under database law. If the library were not protected under the Database Directive, neither its exceptions nor the data mining exceptions would apply, and the maker would be free to restrict use by contract.[^30] Because the library is protected (Section 2.1), the sui generis claim comes on top of the contract claim. The residual risk is therefore a sui generis infringement claim and a breach-of-contract claim, both against the consultancy.
+
+[^30]: [@Ryanair2015].
+
+## Commercial reuse {#sec-reuse}
+
+Commercial reuse is the main barrier, because each party needs rights that the other holds and the proposal does not regulate them. This section builds on the ownership found in Section 2.
+
+Heijmans wants to offer the tool to housing corporations and municipalities. Doing so requires reproducing and distributing the source code, which are exclusive acts of the copyright holder, which in this case is the consultancy.[^31] Without a licence, Heijmans cannot do this. Supplying the tool to third parties would also disclose the scoring model. That model is the consultancy's trade secret, and the mutual confidentiality clause binds Heijmans, so disclosure would be unlawful.[^32]
+
+[^31]: Art. 4(1)(a) and (c) Directive 2009/24/EC.
+
+[^32]: Art. 4(3)(b) [@TradeSecretsDirective2016].
+
+On the other side the consultancy wants to reuse the generic parts of the tool for other clients. It may reuse its own code and scoring model freely. It may not reuse the combined database (D), because Heijmans is its maker and extracting a substantial part requires Heijmans' consent.[^33] Using Heijmans' list (A) or insights from the scans (B) for other clients would breach the duty to limit use to the project, making it an unlawful use of Heijmans' trade secret.[^34]
+
+[^33]: Art. 7(1) [@DatabaseDirective1996].
+
+[^34]: Art. 4(3)(c) [@TradeSecretsDirective2016].
+
+The scraped library content creates a further risk. If scraped interventions end up in D and Heijmans offers D to third parties, that is a re-utilisation of the library's contents.[^35] Heijmans' own sui generis right in D does not help to mitiage this, because protection of a database is without prejudice to rights in its contents.[^36] The library's maker can therefore bring a sui generis claim against both the consultancy and Heijmans. It has a contract claim only against the consultancy, because Heijmans never accepted the terms of use. Heijmans would carry this exposure without knowing it, unless the consultancy discloses where the data came from.
+
+[^35]: Art. 7(2)(b) [@DatabaseDirective1996].
+
+[^36]: Art. 7(4) [@DatabaseDirective1996].
+
+The residual risk lies in the ownership of D. Section 2.1 concluded that Heijmans is the maker, because it funds the work and bears the investment risk. The Database Directive supports this by excluding subcontractors from the definition of maker.[^37] The consultancy could still argue that it took the initiative to build the database, since Heijmans commissioned a tool rather than a database. Until a contract settles this, both parties' reuse plans rest on uncertain ground.
+
+[^37]: Recital 41 [@DatabaseDirective1996].
 
 ## Overall assessment
 
-What blocks the project (commercial reuse without a contract, scraping), what only needs a step, and what is fine (use of Heijmans' list within the project). One sentence on the AI scores: unprotected, so free to reuse but also free for others to copy.
+The project can be completed for Heijmans, but not scaled or sold as planned. Two issues block it: commercial reuse without a contract on ownership and licences, and scraping the library against its terms of use. Two further issues only require a step: the library can be used with its maker's permission, and the tool can be reused if both parties license their rights to each other. Using Heijmans' list and scans within the project, and building the team's own scores, are lawful as they stand.
+
+The AI-generated scores are a special case. Because they are not protected by copyright (Section 2.2), either party may reuse them, but so may any competitor who obtains them. Their only protection comes from trade secret law and the confidentiality clause.
 
 # Advice
 
