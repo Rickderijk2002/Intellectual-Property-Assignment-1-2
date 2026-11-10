@@ -1,7 +1,7 @@
 ---
 title: "Report Intellectual Property Law for the Intervention Recommender (Heijmans Vastgoed)"
 subtitle: "JM0160 Intellectual Property and Privacy, Assignment 2: Intellectual Property Law"
-wordcount: "3,027"
+wordcount: "2,945"
 author:
   - Rick de Rijk
   - Gilbert Laanen
@@ -208,29 +208,47 @@ The project can be completed for Heijmans, but not scaled or sold as planned. Tw
 
 # Advice
 
-The previous segment of the report identified two major issues blocking the consultancy from further developing **its** product and gaining further value from the work done for Heijmans. Additionally, the intellectual property owned by the consultancy, such as the source code and model (E), ought also to be protected and this section outlines recommendations for both these themes.
+This section advises the consultancy, including what it should agree with Heijmans. It follows the two blocking issues from Section 3.4.
 
-The first issue, scraping the online intervention library without any explicit consent**,** leaves the consultancy exposed to legal repercussions as a result of a breach of contract and sui generis infringement. Remedying and/or minimizing this risk will first involve notifying Heijmans of the legal risk they inherit **if scraped content ends up in the combined database (D) and** they decide to use the recommender for commercial operations. If that is the case, **the consultancy** must immediately cease using the scraped interventions and seek consent from the **maker** of the library (C) to use **its** database for commercial means.[^39] **The consultancy could also divide this risk with Heijmans through** contractual tools such as indemnities or liability caps**, although these do not protect it against claims from the library's maker, since the consultancy itself accepted the terms of use.**
+## Obtaining data lawfully
+
+The consultancy should not run the scraper as planned. The safest route is a license from the library's maker.[^39] It should cover extraction and storage by the consultancy and re-utilisation by Heijmans towards third parties, as Section 3.3 showed that Heijmans would otherwise be exposed. The trade-offs are a fee, a delay for negotiation, and the risk that the maker refuses or only allows internal use.
 
 [^39]: Art. 7(3) [@DatabaseDirective1996].
 
-**If the maker refuses, the consultancy can turn to alternative sources: open public sector data under the Open Data Directive,**[^40] **data made available under the Data Governance Act,**[^41] **or interventions the team writes itself. Public sector data is free but generic, access under the Data Governance Act requires an application and is subject to conditions, and self-written interventions take more time but are fully owned.**
+If the maker refuses, three lawful alternatives remain. First, public sector information under the Open Data Directive: public bodies must allow re-use, in principle free of charge and under standard licences, and may not use their sui generis right to block it. Documents in which third parties hold IP rights are excluded however, and public data is mostly statistics rather than ready-made interventions.[^40] Protected public data can be requested under the Data Governance Act, but only with a decision period of up to two months.[^41] Second, openly licensed datasets. The consultancy should check what the licence covers and avoid non-commercial and share-alike terms. Third, interventions the team writes itself. Ideas and facts are free, and as lawful user the consultancy may consult the library and take insubstantial parts,[^42] but systematically retyping is still extraction.[^43] This takes the most time, but the result is fully owned.
 
-[^40]: Arts. 3, 6 and 8 [@OpenDataDirective2019].
+[^40]: Arts. 1(2)(c), 1(6), 3, 6(1) and 8 [@OpenDataDirective2019].
 
-[^41]: Chapters II and III [@DataGovernanceAct2022].
+[^41]: Arts. 3, 5 and 9 [@DataGovernanceAct2022].
 
-The second issue, the entanglement of the parties' IP rights**,** may impede further development and commercial exploitation beyond the original scope of the project. Essentially, the consultancy can make use of generic parts of the software, however it has no rights to the data owned by Heijmans. In turn, Heijmans would not be able to share the code and scoring methods developed by the consultancy with third parties**,** as this falls under trade secret and copyright protection owned by the consultancy. This problem could best be resolved through a contract between Heijmans and the consultancy where**the** parties agree to extend the license to use the software and scoring methods in exchange for the use of Heijmans' data, or some form of monetary compensation comes into play. **The contract should also confirm that Heijmans is the maker of the combined database (D).** In most cases, future exploitation of IP would be discussed in the initial contract negotiations to prevent a situation like this one.
+[^42]: Recital 45 and Art. 8(1) [@DatabaseDirective1996].
 
-Continuing with the ways in which the consultancy could best guard its intellectual property: In this case, the consultancy retains ownership over its source code for the rating and recommender mechanisms developed for Heijmans. The report has already established that copyright and trade secret protections apply to these intellectual properties. Since copyright only protects the **expression of the code**, and not the underlying ideas or algorithms,[^42] this means that competitors could likely legally replicate the functionality of the rating and recommendation system, provided they do not directly copy the consultancy's code. Combining this with our knowledge of trade secret law, it becomes obvious that publicly disclosing parts of the code should be avoided, **because once the scoring model is public, it loses its trade secret protection and competitors can freely replicate it**. Methods that can help prevent the publication of the consultancy's source code include: non-disclosure agreements with both internal and external parties that require access to the code for maintenance in the case of employees and implementation in the case of clients. The consultancy could also use clearly stated limits in its End User License Agreements to **restrict** copying and reverse engineering**, although some acts, such as observing and testing the program, cannot be excluded by contract**.[^43] Organizational measures could include need-to-know access controls for employees, barring employees and contractors of the company access to IP of critical business importance if they are not involved in its development or maintenance. And there are also technical measures that the consultancy could implement to not only hamper reproduction and reverse engineering, but also to strengthen the **"reasonable steps"** argument for trade secret protection through license keys, code signing and tampering detection.[^44]
+[^43]: Art. 7(5) [@DatabaseDirective1996]; [@Directmedia2008].
 
-[^42]: [@SAS2012].
+Whatever the source, the consultancy should record where each intervention came from and under which terms. That record allows it to give Heijmans a warranty on the data it hands over, which removes the hidden exposure identified in Section 3.3.
 
-[^43]: Arts. 5(3) and 8 Directive 2009/24/EC.
+## Settling the rights with Heijmans
 
-[^44]: Art. 2(1)(c) [@TradeSecretsDirective2016].
+The entanglement of rights is best resolved in a written agreement before the tool is reused or sold, as copyright can only be transferred by deed.[^44] The agreement should cover three points: 1. The consultancy keeps the copyright in the source code and licenses Heijmans to use the tool and offer it to third parties, preferably as an online service or in object code, so that the source code is not handed over. A licence fee or royalty can reflect its commercial value. 2. Heijmans is confirmed as maker of the database (D), in return for a licence-back allowing the consultancy to extract the interventions it contributed and reuse them for other clients. 3. The confidentiality clause continues to limit use of Heijmans' list and scans to Heijmans' projects. For other clients, the consultancy builds a separate version without that data.
 
-**To conclude, the tool can be completed and used for Heijmans as planned, but scaling and selling it first requires replacing or licensing the library data and a contract that settles ownership and licences.**
+[^44]: Art. 2(2) Aw.
+
+The scores and the scoring model remain unprotected: the contract binds only the two parties, so neither can use them as an exclusive asset against competitors.
+
+## Protecting the source code
+
+Because copyright protects the expression of the code and not its functionality[^45] competitors may build a similar tool. The consultancy's advantage therefore lies in keeping the code secret: keeping it out of client deliveries, binding employees and contractors with access through non-disclosure agreements, and restricting access on a need-to-know basis. Licence terms can prohibit copying, but not observing and testing the program or decompiling it for interoperability.[^46] These measures also count as the reasonable steps trade secret protection requires.[^47]
+
+[^45]: [@SAS2012].
+
+[^46]: Arts. 5(3), 6 and 8 Directive 2009/24/EC.
+
+[^47]: Art. 2(1)(c) [@TradeSecretsDirective2016].
+
+## Conclusion
+
+The tool can be completed and used for Heijmans as planned. To scale and sell it, the consultancy should first frop the scraping plan and agree the rigths with Heijmans, and then license the library or replace its data with open or self-written sources. If no agreement with Heijmans is reached, the fallback is to retrict the tool to Heijmans and rebuild the generic core for other clients form independent sources.
 
 # Technology Statement {.unnumbered}
 
