@@ -1,13 +1,13 @@
 ---
 title: "Report Intellectual Property Law for the Intervention Recommender (Heijmans Vastgoed)"
 subtitle: "JM0160 Intellectual Property and Privacy, Assignment 2: Intellectual Property Law"
-wordcount: "2.171"
+wordcount: "3,027"
 author:
   - Rick de Rijk
   - Gilbert Laanen
   - Stefan Vonk
   - Thom Verzantvoort
-  - Patryk Grodek
+  - Patryck Grodek
   - Tycho van Rooij
 format:
   pdf:
@@ -17,12 +17,17 @@ format:
     include-in-header:
       text: |
         \usepackage{placeins}
+editor: visual
+fontsize: 12pt
+linestretch: 1.5
+mainfont: "Times New Roman"
+pdf-engine: xelatex
 geometry:
   - top=1.5cm
   - bottom=1.8cm
   - left=1.8cm
   - right=1.8cm
-editor: visual
+  - margin=1.5cm
 toc: true
 number-sections: true
 bibliography: references.bib
@@ -31,15 +36,6 @@ indent: true
 ---
 
 \newpage
-
-```{=html}
-<!--
-OUTLINE ONLY. Word ranges follow the suggested template in the brief (guide, not binding).
-Total limit: 3000 words excl. footnotes. Legal sources listed per subsection are candidates:
-verify each one (and the Dutch implementing provisions) before citing. Remove these comments
-before submission.
--->
-```
 
 # Brief Statement of the Relevant Facts of the Project
 
@@ -66,13 +62,8 @@ This report assesses the project in an operational scenario. The following point
 
 Based on the case description above, this section tests five assets against each right:
 
-1.  Heijmans' intervention list (A) and the impact scans (B)
-2.  The third-party library (C);
-3.  The combined database, including the AI-generated and reviewed scores (D), and
-4.  The tool (source code and scoring model) (E)
-
 | Asset | Protected by | Rightholder |
-|:---|:---|:---|
+|:-----------------------|:-----------------------|:-----------------------|
 | \(A\) Heijmans' intervention list | Sui generis right; trade secret | Heijmans |
 | \(B\) Impact scans | Copyright; trade secret | Heijmans |
 | \(C\) Third-party library | Sui generis right | Library owner |
@@ -241,6 +232,13 @@ Continuing with the ways in which the consultancy could best guard its intellect
 
 # Technology Statement {.unnumbered}
 
-During the preparation of this work, we used \[ NAME TOOL / SERVICE / VERSION \] in order to \[ REASON \]. The following parts of the assignment were affected by AI tool usage: \[ SECTIONS \]. After using this tool/service, \[ NAMES OF STUDENTS \] evaluated the validity of the tool's outputs, including the sources that generative AI tools have used, and edited the content as needed. As a consequence, \[ NAMES OF STUDENTS \] take(s) full responsibility for the content of their work.
+During the preparation of this work, we used ChatGPT (GPT-5) and Claude (Sonnet 5.5) in order to improve
+documentation quality, help with reducing the number of words and enhance writing clarity. The following parts of the
+assignment were affected by AI tool usage: all sections. After using this tool/service, Rick de Rijk, Gilbert Laanen,
+Stefan Vonk, Thom Verzantvoort, Patryck Grodek and Tycho van Rooij evaluated the validity of the tool’s outputs,
+including the sources that generative AI tools have used, and edited the content as needed. As a consequence, Rick de
+Rijk, Gilbert Laanen, Stefan Vonk, Thom Verzantvoort, Patryck Grodek and Tycho van Rooij take full responsibility
+for the content of their work.
 
+\clearpage
 # References {.unnumbered}
