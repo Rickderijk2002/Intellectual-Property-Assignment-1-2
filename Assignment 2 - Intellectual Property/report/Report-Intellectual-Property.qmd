@@ -7,7 +7,7 @@ author:
   - Gilbert Laanen
   - Stefan Vonk
   - Thom Verzantvoort
-  - Patryck Grodek
+  - Patryk Grodek
   - Tycho van Rooij
 format:
   pdf:
@@ -248,7 +248,7 @@ Because copyright protects the expression of the code and not its functionality[
 
 ## Conclusion
 
-The tool can be completed and used for Heijmans as planned. To scale and sell it, the consultancy should first frop the scraping plan and agree the rigths with Heijmans, and then license the library or replace its data with open or self-written sources. If no agreement with Heijmans is reached, the fallback is to retrict the tool to Heijmans and rebuild the generic core for other clients form independent sources.
+The tool can be completed and used for Heijmans as planned. To scale and sell it, the consultancy should first drop the scraping plan and agree the rigths with Heijmans, and then license the library or replace its data with open or self-written sources. If no agreement with Heijmans is reached, the fallback is to retrict the tool to Heijmans and rebuild the generic core for other clients form independent sources.
 
 # Technology Statement {.unnumbered}
 
