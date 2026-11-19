@@ -1,11 +1,11 @@
 ---
 title: "Report Intellectual Property Law for the Intervention Recommender (Heijmans Vastgoed)"
 subtitle: "JM0160 Intellectual Property and Privacy, Assignment 2: Intellectual Property Law"
-wordcount: "2,991"
+wordcount: "2985"
 author:
-  - Rick de Rijk (STUDENT NUMBER)
+  - Rick de Rijk (2151940)
   - Gilbert Laanen (2151170)
-  - Stefan Vonk (STUDENT NUMBER)
+  - Stefan Vonk (2087580)
   - Thom Verzantvoort (2038050)
   - Patryk Grodek (2087543)
   - Tycho van Rooij (2080652)
@@ -41,11 +41,11 @@ indent: true
 
 ## The Intervention Recommender Tool for Heijmans Vastgoed
 
-Heijmans Vastgoed, a Dutch property developer, uses well-being impact scans to identify opportunities in **neighbourhoods.** The scans show where opportunities lie but **do** not recommend which interventions fit. Our team developed an Intervention Recommender Tool to close this gap: a decision-support application that for a given **neighbourhood** ranks well-being interventions using a weighted scoring model. The model is transparent to its users: they see each intervention's scores and can adjust the weights of the criteria.[^1]
+Heijmans Vastgoed, a Dutch property developer, uses well-being impact scans to identify opportunities in neighbourhoods. The scans show where opportunities lie but do not recommend which interventions fit. Our team developed an Intervention Recommender Tool to close this gap: a decision-support application that for a given neighbourhood ranks well-being interventions using a weighted scoring model. The model is transparent to its users: they see each intervention's scores and can adjust the weights of the criteria.[^1]
 
-[^1]: [@Heijmans2026, sections 1-3]
+[^1]: [@Heijmans2026, sections 1-3].
 
-The tool runs on a structured database of interventions. It combines interventions collected by the team together with the high priority interventions from a list that Heijmans supplied as an Excel file. Each intervention is classified by theme and scored on criteria such as impact, cost, effort, risk and feasibility. The initial scores were generated with generative AI **from synthetic data derived from the scans** and **the list, so no confidential Heijmans material entered the AI tool. The team** then reviewed and adjusted **them manually.[^2]** Users see the outcome, not the source code. The tool is intended to support consultants, not replace them, and to be scalable across projects.[^3]
+The tool runs on a structured database of interventions. It combines interventions collected by the team together with the high-priority interventions from a list that Heijmans supplied as an Excel file. Each intervention is classified by theme and scored on criteria such as impact, cost, effort, risk and feasibility. The initial scores were generated with generative AI from synthetic data based on the scans and the list, so no confidential Heijmans material entered the AI tool. The team then reviewed and adjusted them manually.[^2] Users see the outcome, not the source code. The tool is intended to support consultants, not replace them, and to be scalable across projects.[^3]
 
 [^2]: [@Heijmans2026, sections 3.2-3.4, 4].
 
@@ -53,8 +53,8 @@ The tool runs on a structured database of interventions. It combines interventio
 
 This report assesses the project in an operational scenario. The following assumptions scope the assignment, not all of them were part of the original project:
 
-1.  The team acts as a Dutch data consultancy hired by Heijmans. The proposal covers scope and fees for all project work and contains a mutual confidentiality clause: each party keeps the **other's** information confidential and uses it only for the project. It says nothing about who owns, or may license, the database or the tool.
-2.  Heijmans **spent years of staff time collecting** the interventions on its list from its past projects and partners, **checking them** and **structuring** them by theme and priority. Its employees wrote the impact scans. Neither is public, and both were shared with the consultancy under the confidentiality clause only.
+1.  The team acts as a Dutch data consultancy hired by Heijmans. The proposal covers scope and fees for all project work and contains a mutual confidentiality clause: each party keeps the other's information confidential and uses it only for the project. It says nothing about who owns, or may license, the database or the tool.
+2.  Heijmans spent years of staff time collecting the interventions on its list from its past projects and partners, checking them and structuring them by theme and priority. Its employees wrote the impact scans. Neither is public, and both were shared with the consultancy under the confidentiality clause only.
 3.  To fill gaps, the consultancy plans to add most of the interventions from a third-party online library, collected by a scraper. The library is run by a Dutch organisation whose editorial team collects, checks and updates the interventions. It is free to use, but only after registering an account and accepting terms of use, which prohibit automated access and extraction. The site's robots.txt reserves the same rights.
 4.  Heijmans wants to reuse the tool and the combined database across its own projects and to offer them commercially to third parties, such as housing corporations and municipalities. The consultancy wants to reuse the generic parts of the tool, its code and scoring model, for other clients.
 
@@ -74,51 +74,51 @@ Based on the case description above, this section tests five assets against each
 
 ## Database rights
 
-A database is a collection of independent materials, arranged systematically and individually accessible.[^4] The intervention list (A), the library (C) and the combined database (D) fit this definition: each consists of separate interventions that can be retrieved one by one. The impact scans (B) do not. Each scan is one integrated analysis of a **neighbourhood** whose parts have no autonomous informative value, so they are assessed under copyright and trade secrets only.
+A database is a collection of independent materials, arranged systematically and individually accessible.[^4] The intervention list (A), the library (C) and the combined database (D) fit this definition: each consists of separate interventions that can be retrieved one by one. The impact scans (B) do not. Each scan is one integrated analysis of a neighbourhood whose parts have no autonomous informative value, so they are assessed under copyright and trade secrets only.
 
-[^4]: Art. 1(2) [@DatabaseDirective1996]; Art. 1(1)(a) **Databankenwet (Dbw);** [@FixturesOPAP2004].
+[^4]: Art. 1(2) [@DatabaseDirective1996]; Art. 1(1)(a) Databankenwet (Dbw); [@FixturesOPAP2004].
 
 Database copyright requires the selection or arrangement of the contents to be the author's own intellectual creation. Labour and skill spent on the data itself are irrelevant.[^5] Grouping interventions by theme, category or priority and scoring them on standard criteria is functional and leaves little room for creative choices, so none of the three databases qualifies.
 
-[^5]: Art. 3(1) [@DatabaseDirective1996]; Art. 10(3) **Auteurswet (Aw);** [@FootballDatacoYahoo2012].
+[^5]: Art. 3(1) [@DatabaseDirective1996]; Art. 10(3) Auteurswet (Aw); [@FootballDatacoYahoo2012].
 
-The sui generis right instead rewards a substantial investment in obtaining, verifying or presenting the contents rather than in creating them.[^6] Heijmans, the consultancy and the library's maker are all Dutch, so the condition in **Art. 11** is met.[^7] **Interventions** Heijmans **devised in** its **own projects are created data, which does not count.[^7a] The** list (A) is **still likely protected,** with Heijmans as the **maker, because it spent years of staff time collecting partner interventions, checking them and structuring them: investment in obtaining, verifying and presenting.** The library (C) is protected as well: its editorial team collects, checks and updates the interventions. For the combined database (D), the consultancy's work in collecting and presenting interventions from several sources counts, but the scores do not: generating and then reviewing them is the creation of new data.[^8] A sui generis right therefore exists in the collection layer only. Its maker is whoever took the initiative and bore the risk of the **investment, which excludes subcontractors.[^9]** Heijmans pays the fees for all project **work and** so bears the investment **risk, which makes it the likely maker. Payment alone is not decisive, however: Heijmans commissioned a tool rather than a database,** and the **consultancy took the initiative to build one, so it could also claim to be the maker, arguing it acted on its own initiative rather than as a mere subcontractor.**
+The sui generis right instead rewards a substantial investment in obtaining, verifying or presenting the contents rather than in creating them.[^6] Heijmans, the consultancy and the library's maker are all Dutch, so the condition in Art. 11 is met.[^7] Interventions Heijmans devised in its own projects are created data, which does not count.[^8] The list (A) is still likely protected, with Heijmans as the maker, because it spent years of staff time collecting partner interventions, checking them and structuring them: investment in obtaining, verifying and presenting. The library (C) is protected as well: its editorial team collects, checks and updates the interventions. For the combined database (D), the consultancy's work in collecting and presenting interventions from several sources counts, but the scores do not: generating and then reviewing them is the creation of new data.[^9] A sui generis right therefore exists in the collection layer only. Its maker is whoever took the initiative and bore the risk of the investment, which excludes subcontractors.[^10] Heijmans commissioned a tool rather than a database, so the consultancy may argue that it took the initiative to build one. Both conditions are required, however, and Heijmans pays the fees for all project work, so it bears the investment risk. Heijmans is therefore the likely maker, but without a contract the consultancy's claim leaves some uncertainty.
 
 [^6]: Art. 7(1) [@DatabaseDirective1996]; Art. 2 Dbw; [@BHB2004].
 
 [^7]: Art. 11 [@DatabaseDirective1996].
 
-[^7a]: **[@BHB2004].**
-
 [^8]: [@BHB2004].
 
-[^9]: Recital 41 [@DatabaseDirective1996]; Art. 1(1)(b) Dbw.
+[^9]: [@BHB2004].
+
+[^10]: Recital 41 [@DatabaseDirective1996]; Art. 1(1)(b) Dbw.
 
 ## Copyright
 
-A work is protected if it is the author's own intellectual creation, reflecting free and creative choices.[^10] Ideas, methods of operation and the principles underlying a computer program are **not.[^11]**
+A work is protected if it is the author's own intellectual creation, reflecting free and creative choices.[^11] Ideas, methods of operation and the principles underlying a computer program are not.[^12]
 
-[^10]: [@Infopaq2009]; **[@Cofemel2019].**
+[^11]: [@Infopaq2009]; [@Cofemel2019].
 
-[^11]: Art. 9(2) TRIPS; Art. 1(2) **[@SoftwareDirective2009];** [@SAS2012].
+[^12]: Art. 9(2) TRIPS; Art. 1(2) [@SoftwareDirective2009]; [@SAS2012].
 
-The impact scans (B) meet this test: their authors chose how to combine text, analysis, maps and recommendations. Protection covers that expression, not the facts and findings. Because Heijmans' employees wrote the scans as part of their work, Heijmans is treated as the author and holds the copyright.[^12]
+The impact scans (B) meet this test: their authors chose how to combine text, analysis, maps and recommendations. Protection covers that expression, not the facts and findings. Because Heijmans' employees wrote the scans as part of their work, Heijmans is treated as the author and holds the copyright.[^13]
 
-[^12]: Art. 7 Aw.
+[^13]: Art. 7 Aw.
 
-The source code (E) is protected as a computer program. It was written by the consultancy's employees, so the consultancy holds the copyright; commissioning and paying for the tool does not transfer it to Heijmans.[^13] The scoring model (E) is not protected: its criteria, weights and ranking logic are ideas and methods of operation. The scores (D) are not protected **either:** the AI-generated baseline has no human author, and adjusting a numeric score is not a creative choice.
+The source code (E) is protected as a computer program. It was written by the consultancy's employees, so the consultancy holds the copyright; commissioning and paying for the tool does not transfer it to Heijmans.[^14] The scoring model (E) is not protected: its criteria, weights and ranking logic are ideas and methods of operation. The scores (D) are not protected either: the AI-generated baseline has no human author, and adjusting a numeric score is not a creative choice.
 
-[^13]: Art. 2(3) **[@SoftwareDirective2009];** Arts. 2(2), 7 and 10(1)(12) Aw.
+[^14]: Art. 2(3) [@SoftwareDirective2009]; Arts. 2(2), 7 and 10(1)(12) Aw.
 
 ## Trade Secrets
 
-Information is a trade secret if it is secret, has commercial value because it is secret, and is subject to reasonable steps to keep it secret.[^14] Heijmans' list (A) and scans (B) meet all three conditions: they are not public, they reveal where Heijmans sees development opportunities, and the consultancy received them under a confidentiality clause. This covers their content, including the findings that copyright leaves free, which makes it Heijmans' strongest right. The source code (E) meets the same conditions: it is not public, users see only its outcome, its value lies in a working tool that competitors cannot simply copy, and the **mutual** confidentiality clause binds Heijmans. The scoring model and **scores are visible to users, but only to Heijmans' staff, who are bound by** the **confidentiality clause,** so they **can remain secret, provided their specific criteria and default weights** are not **generally known among consultants.[^14a] This ends once they are offered to third parties without confidentiality terms.** Because the proposal is silent on ownership, the consultancy remains the holder, as it developed the code and **model and** controls **them.[^15]**
+Information is a trade secret if it is secret, has commercial value because it is secret, and is subject to reasonable steps to keep it secret.[^15] Heijmans' list (A) and scans (B) meet all three conditions: they are not public, they reveal where Heijmans sees development opportunities, and the consultancy received them under a confidentiality clause. This covers their content, including the findings that copyright leaves free, which makes it Heijmans' strongest right. The source code (E) meets the same conditions: it is not public, users see only its outcome, its value lies in a working tool that competitors cannot simply copy, and the mutual confidentiality clause binds Heijmans. The scoring model is visible to users, but only to Heijmans' staff, who are bound by the confidentiality clause. It can therefore remain secret if its specific criteria and default weights are not generally known among consultants, and its value to other clients depends on that.[^16] This ends once it is offered to third parties without confidentiality terms. Because the proposal is silent on ownership, the consultancy remains the holder of the code and model, which it developed and controls.[^17]
 
-[^14]: Art. 2(1) [@TradeSecretsDirective2016]; Art. 1 **Wet bescherming bedrijfsgeheimen (Wbb).**
+[^15]: Art. 2(1) [@TradeSecretsDirective2016]; Art. 1 Wet bescherming bedrijfsgeheimen (Wbb).
 
-[^14a]: **Art. 2(1)(a) [@TradeSecretsDirective2016].**
+[^16]: Art. 2(1)(a) [@TradeSecretsDirective2016].
 
-[^15]: Art. 2(2) [@TradeSecretsDirective2016].
+[^17]: Art. 2(2) [@TradeSecretsDirective2016].
 
 # Assessment of Barriers and Infringement
 
@@ -126,89 +126,91 @@ Information is a trade secret if it is secret, has commercial value because it i
 
 Within the Heijmans project, using the intervention list (A) and the impact scans (B) carries no real risk. The consultancy performs two acts: it copies the priority interventions from the list into the combined database, and it derives interventions from the findings of the scans.
 
-Taking the high priority interventions is **likely** a substantial **extraction: they** are the entries **into which** Heijmans **put** most **of its checking and structuring effort. Their importance to Heijmans as such is not the test.[^15a] Such an extraction** normally requires the maker's authorisation.[^16] Heijmans supplied the list precisely so that it could be built into the tool, so that authorisation is given, at least for the purpose of the project.
+Taking the high-priority interventions is likely a substantial extraction, not because the entries matter most to Heijmans but because it invested in checking each of them and ranking them by priority.[^18] Such an extraction normally requires the maker's authorisation.[^19] Heijmans supplied the list precisely so that it could be built into the tool, so authorisation is given, at least for the purpose of the project.
 
-[^15a]: **[@BHB2004].**
+[^18]: [@BHB2004].
 
-[^16]: Art. 7(1) [@DatabaseDirective1996].
+[^19]: Art. 7(1) [@DatabaseDirective1996].
 
-The same reasoning applies to Heijmans' trade secret in A and B. The consultancy acquired the information with **Heijmans' consent, so** the acquisition is lawful.[^17] Using a lawfully acquired trade secret only becomes unlawful when it breaches a contractual or other duty to limit that use.[^18] The confidentiality clause limits use to the project, and the consultancy stays within that limit.
+The same reasoning applies to Heijmans' trade secret in A and B. The consultancy acquired the information with Heijmans' consent, so the acquisition is lawful.[^20] Using a lawfully acquired trade secret only becomes unlawful when it breaches a contractual or other duty to limit that use.[^21] The confidentiality clause limits use to the project, and the consultancy stays within that limit.
 
-[^17]: Art. **4(2)** [@TradeSecretsDirective2016].
+[^20]: Art. 4(2) [@TradeSecretsDirective2016].
 
-[^18]: Art. 4(3)(c) [@TradeSecretsDirective2016].
+[^21]: Art. 4(3)(c) [@TradeSecretsDirective2016].
 
-Copyright in the scans is not engaged. The tool takes over what the scans found, not how their authors expressed it, and copyright protects only the expression of a work, not facts or data as such.[^19]
+Copyright in the scans is not engaged. The tool takes over what the scans found, not how their authors expressed it, and copyright protects only the expression of a work, not facts or data as such.[^22]
 
-[^19]: **Art. 9(2) TRIPS;** [@Infopaq2009].
+[^22]: Art. 9(2) TRIPS; [@Infopaq2009].
 
-Any use of the list or scans **beyond the project** falls outside the confidentiality clause and is assessed in @sec-reuse.
+Any use of the list or scans beyond the project falls outside the confidentiality clause and is assessed in @sec-reuse.
 
 ## Scraping the third-party library
 
 As planned, scraping the library infringes its maker's sui generis right and breaches the terms of use.
 
-**The** scraper copies interventions in bulk into the consultancy's dataset. This is an extraction: a transfer of the contents of a database to another medium,[^20] for which physical copying is not even required.[^21] Because the scraper copies most of the library, the extraction is substantial in quantity. **Furthermore,** the extraction is substantial in quality, because it takes the contents in which the editorial team invested by collecting, checking and updating them.[^22] **Spreading** the scraping over many small runs does not **help either:** repeated and systematic extraction of insubstantial parts that conflicts with normal exploitation of the database is **also prohibited.[^23]**
+The scraper copies interventions in bulk into the consultancy's dataset. This is an extraction: a transfer of the contents of a database to another medium,[^23] for which physical copying is not even required.[^24] Because the scraper copies most of the library, the extraction is substantial in quantity. Furthermore, the extraction is substantial in quality, because it takes the contents in which the editorial team invested by collecting, checking and updating them.[^25] Spreading the scraping over many small runs does not help either: repeated and systematic extraction of insubstantial parts that conflicts with normal exploitation of the database is also prohibited.[^26]
 
-[^20]: Art. 7(2)(a) [@DatabaseDirective1996].
+[^23]: Art. 7(2)(a) [@DatabaseDirective1996].
 
-[^21]: [@Directmedia2008].
+[^24]: [@Directmedia2008].
 
-[^22]: Art. 7(1) [@DatabaseDirective1996]; [@BHB2004].
+[^25]: Art. 7(1) [@DatabaseDirective1996]; [@BHB2004].
 
-[^23]: Art. 7(5) [@DatabaseDirective1996].
+[^26]: Art. 7(5) [@DatabaseDirective1996].
 
-The exceptions in the Database Directive do not help. As a registered user, the consultancy is a lawful user and is allowed to extract insubstantial parts, a right the maker cannot override by contract,[^24] but this does not cover bulk extraction. The exception for teaching and scientific research is limited to non-commercial **purposes.[^25] The** data mining exception for scientific research is reserved for research organisations and cultural heritage institutions, not a commercial consultancy.[^26]
+The exceptions in the Database Directive do not help. As a registered user, the consultancy is a lawful user and is allowed to extract insubstantial parts, a right the maker cannot override by contract,[^27] but this does not cover bulk extraction. The exception for teaching and scientific research is limited to non-commercial purposes.[^28] The data mining exception for scientific research is reserved for research organisations and cultural heritage institutions, not a commercial consultancy.[^29]
 
-[^24]: Arts. 8(1) and 15 [@DatabaseDirective1996].
+[^27]: Arts. 8(1) and 15 [@DatabaseDirective1996].
 
-[^25]: Art. 9(b) [@DatabaseDirective1996].
+[^28]: Art. 9(b) [@DatabaseDirective1996].
 
-[^26]: Arts. 2(1) and 3 [@DSMDirective2019].
+[^29]: Arts. 2(1) and 3 [@DSMDirective2019].
 
-That leaves the general data mining exception, which allows anyone with lawful access to reproduce and extract contents for data mining, for any purpose, as long as the copies are kept only as long as necessary.[^27] **It does not apply here, because the plan is not data mining in the first place: data mining is an automated analysis that generates information such as patterns, trends and correlations, whereas the consultancy wants to store the interventions permanently so that users can browse them.[^27a] Even if it were data mining, the maker has opted out.** The consultancy has lawful access through its **account, but** the maker can opt out by expressly reserving its rights. For content made publicly available online, the reservation must be machine-readable; in other cases, a reservation in a contract or unilateral declaration is deemed good enough.[^28] The maker reserves its rights both in its terms of use and in machine-readable form in its robots.txt, so the opt-out is valid whether or not the library counts as publicly available **online.** Unlike the research exception, the general exception can be overridden by contract.[^29]
+That leaves the general data mining exception, which allows anyone with lawful access to reproduce and extract contents for data mining, for any purpose, as long as the copies are kept only as long as necessary.[^30] It does not apply here, because the plan is not data mining in the first place: data mining is an automated analysis that generates information such as patterns, trends and correlations, whereas the consultancy wants to store the interventions permanently so that users can browse them.[^31] Even if it were data mining, the consultancy's lawful access through its account would not help, because the maker has opted out by expressly reserving its rights. For content made publicly available online, the reservation must be machine-readable; in other cases, a reservation in a contract or unilateral declaration is deemed good enough.[^32] The maker reserves its rights both in its terms of use and in machine-readable form in its robots.txt, so the opt-out is valid whether or not the library counts as publicly available online. Unlike the research exception, the general exception can be overridden by contract.[^33]
 
-[^27]: Art. 4(1)–(2) [@DSMDirective2019].
+[^30]: Art. 4(1)–(2) [@DSMDirective2019].
 
-[^27a]: **Arts. 2(2) and 4(2) [@DSMDirective2019].**
+[^31]: Arts. 2(2) and 4(2) [@DSMDirective2019].
 
-[^28]: Art. 4(3) and Recital 18 [@DSMDirective2019].
+[^32]: Art. 4(3) and Recital 18 [@DSMDirective2019].
 
-[^29]: Art. 7(1) [@DSMDirective2019].
+[^33]: Art. 7(1) [@DSMDirective2019].
 
-The terms of use also create a separate contractual risk. By accepting them, the consultancy agreed not to scrape, and this commitment holds regardless of the outcome under database law. If the library were not protected under the Database Directive, neither its exceptions nor the data mining exceptions would apply, and the maker would be free to restrict use by contract.[^31] Because the library is protected (Section 2.1), the sui generis claim comes on top of the contract claim. The residual risk is therefore a sui generis infringement claim and a breach-of-contract claim, both against the consultancy.
+The terms of use also create a separate contractual risk. By accepting them, the consultancy agreed not to scrape, and this commitment holds for bulk scraping, because Art. 15 only protects extracting insubstantial parts.[^34] If the library were not protected under the Database Directive, neither its exceptions nor the data mining exceptions would apply, and the maker would be free to restrict use by contract.[^35] Because the library is protected (Section 2.1), the sui generis claim comes on top of the contract claim. The residual risk is therefore a sui generis infringement claim and a breach-of-contract claim, both against the consultancy.
 
-[^31]: [@Ryanair2015].
+[^34]: Arts. 8(1) and 15 [@DatabaseDirective1996].
+
+[^35]: [@Ryanair2015].
 
 ## Commercial reuse {#sec-reuse}
 
 Commercial reuse is the main barrier, because each party needs rights that the other holds and the proposal does not regulate them.
 
-Heijmans wants to offer the tool to housing corporations and municipalities. Doing so requires reproducing and distributing the program, which are exclusive acts of the copyright holder, which in this case is the consultancy.[^32] Without a licence, Heijmans cannot do this. If the **consultancy hands over the** source code, **Heijmans is bound not to disclose it.[^33] Offering the tool to third parties** would also **show them** the **scoring model, which stays a** trade **secret only if those users are bound by** confidentiality **terms (Section 2.3).**
+Heijmans wants to offer the tool to housing corporations and municipalities. Doing so requires reproducing and distributing the program, which are exclusive acts of the copyright holder, here the consultancy.[^36] Without a licence, Heijmans cannot do this. If the consultancy hands over the source code, Heijmans is bound not to disclose it.[^37] Offering the tool to third parties would also show them the scoring model, which stays a trade secret only if those users are bound by confidentiality terms (Section 2.3).
 
-[^32]: Art. 4(1)(a) and (c) **[@SoftwareDirective2009].**
+[^36]: Art. 4(1)(a) and (c) [@SoftwareDirective2009].
 
-[^33]: Art. 4(3)(b) [@TradeSecretsDirective2016].
+[^37]: Art. 4(3)(b) [@TradeSecretsDirective2016].
 
-On the other **side,** the consultancy wants to reuse the generic parts of the tool for other clients. It may reuse its own **code** and scoring model, which **it holds as trade secrets (Section 2.3).** It may not reuse the combined database (D), because Heijmans is likely its maker and extracting a substantial part requires Heijmans' consent.[^34] Using Heijmans' list (A) or insights from the scans (B) for other clients would breach the duty to limit use to the project, making it an unlawful use of Heijmans' trade secret.[^35]
+On the other side, the consultancy wants to reuse the generic parts of the tool for other clients. It may reuse its own code and scoring model, in which Heijmans holds no rights (Sections 2.2 and 2.3). It may not reuse the combined database (D), because Heijmans is likely its maker and extracting a substantial part requires Heijmans' consent.[^38] Using Heijmans' list (A) or insights from the scans (B) for other clients would breach the duty to limit use to the project, making it an unlawful use of Heijmans' trade secret.[^39]
 
-[^34]: Art. 7(1) [@DatabaseDirective1996].
+[^38]: Art. 7(1) [@DatabaseDirective1996].
 
-[^35]: Art. 4(3)(c) [@TradeSecretsDirective2016].
+[^39]: Art. 4(3)(c) [@TradeSecretsDirective2016].
 
-The scraped library content creates a further risk. If scraped interventions end up in D and Heijmans offers D to third parties, that is a re-utilisation of the library's contents.[^36] **The data mining exception never covers re-utilisation, so this would infringe even without the opt-out.[^36a]** Heijmans' own sui generis right in D does not help to mitigate this, because protection of a database is without prejudice to rights in its contents.[^37] The library's maker can therefore bring a sui generis claim against both the consultancy and Heijmans. It has a contract claim only against the consultancy, because Heijmans never accepted the terms of use. Heijmans would carry this exposure without knowing it, unless the consultancy discloses where the data came from.
+The scraped library content creates a further risk. If scraped interventions end up in D and Heijmans offers D to third parties, that is a re-utilisation of the library's contents.[^40] The data mining exception never covers re-utilisation, so this would infringe even without the opt-out.[^41] Heijmans' own sui generis right in D does not help, because protection of a database is without prejudice to rights in its contents.[^42] The library's maker can therefore bring a sui generis claim against both the consultancy and Heijmans. It has a contract claim only against the consultancy, because Heijmans never accepted the terms of use. Heijmans would carry this exposure without knowing it, unless the consultancy discloses where the data came from.
 
-[^36]: Art. 7(2)(b) [@DatabaseDirective1996].
+[^40]: Art. 7(2)(b) [@DatabaseDirective1996].
 
-[^36a]: **Art. 4(1) [@DSMDirective2019].**
+[^41]: Art. 4(1) [@DSMDirective2019].
 
-[^37]: Art. 7(4) [@DatabaseDirective1996].
+[^42]: Art. 7(4) [@DatabaseDirective1996].
 
-The residual risk lies in the ownership of **D:** Heijmans is likely the maker, **but** the consultancy could **also claim** that **role (Section 2.1).** Until a contract settles this, both parties' reuse plans rest on uncertain ground.
+The residual risk lies in the ownership of D: Heijmans is likely the maker, but the consultancy could also claim that role (Section 2.1). Until a contract settles this, both parties' reuse plans rest on uncertain ground.
 
 ## Overall assessment
 
-The project can be completed for Heijmans, but not scaled or sold as planned. Two issues block this: scraping the library, which needs its maker's permission or other sources, and commercial reuse, which needs a contract settling ownership and mutual licences. Both cost time, but neither stops the project. Using Heijmans' list and scans within the project, and the team's own scores, are lawful as they stand.
+The project can be completed for Heijmans, but not as planned. Two issues stand in the way: scraping the library, which needs its maker's permission or other sources, and commercial reuse, which needs a contract settling ownership and mutual licences. Both cost time, but neither stops the project. Using Heijmans' list and scans within the project, and the team's own scores, are lawful as they stand.
 
 # Advice
 
@@ -216,51 +218,51 @@ This section advises the consultancy, including what it should agree with Heijma
 
 ## Obtaining data lawfully
 
-The consultancy should not run the scraper as planned. The safest route is a **licence** from the library's maker.[^39] It should cover extraction and storage by the consultancy and re-utilisation by Heijmans towards third parties, as Section 3.3 showed that Heijmans would otherwise be exposed. The trade-offs are a fee, a delay for negotiation, and the risk that the maker refuses or only allows internal use.
+The consultancy should not run the scraper as planned. The safest route is a licence from the library's maker.[^43] It should cover extraction and storage by the consultancy and re-utilisation by Heijmans towards third parties, as Section 3.3 showed that Heijmans would otherwise be exposed. The trade-offs are a fee, a delay for negotiation, and the risk that the maker refuses or only allows internal use.
 
-[^39]: Art. 7(3) [@DatabaseDirective1996].
+[^43]: Art. 7(3) [@DatabaseDirective1996].
 
-If the maker refuses, three lawful alternatives remain. First, public sector information under the Open Data Directive: public bodies must allow re-use, in principle free of charge and under standard licences, and may not use their sui generis right to block it. Documents in which third parties hold IP rights are excluded however, and public data is mostly statistics rather than ready-made interventions.[^40] Protected public data can be requested under the Data Governance Act, but only with a decision period of up to two months.[^41] Second, openly licensed datasets. The consultancy should check what the licence covers and avoid non-commercial and share-alike terms. Third, interventions the team writes itself. Ideas and facts are free, and as lawful user the consultancy may consult the library and take insubstantial parts,[^42] but systematically retyping is still extraction.[^43] This takes the most time, but the result is fully owned.
+If the maker refuses, three lawful alternatives remain. First, public sector information under the Open Data Directive: public bodies must allow re-use, in principle free of charge and under standard licences, and may not use their sui generis right to block it. Documents in which third parties hold IP rights are excluded, however, and public data is mostly statistics rather than ready-made interventions.[^44] Protected public data can be requested under the Data Governance Act, but a decision can take up to two months.[^45] Second, openly licensed datasets. The consultancy should check what the licence covers and avoid non-commercial and share-alike terms. Third, interventions the team writes itself. Ideas and facts are free, and as lawful user the consultancy may consult the library and take insubstantial parts,[^46] but systematically retyping is still extraction.[^47] This takes the most time, but the result is free of third-party rights.
 
-[^40]: Arts. 1(2)(c), 1(6), 3, 6(1) and 8 [@OpenDataDirective2019].
+[^44]: Arts. 1(2)(c), 1(6), 3, 6(1) and 8 [@OpenDataDirective2019].
 
-[^41]: Arts. 3, 5 and 9 [@DataGovernanceAct2022].
+[^45]: Arts. 3, 5 and 9 [@DataGovernanceAct2022].
 
-[^42]: Recital 45 and Art. 8(1) [@DatabaseDirective1996].
+[^46]: Recital 45 and Art. 8(1) [@DatabaseDirective1996].
 
-[^43]: Art. 7(5) [@DatabaseDirective1996]; [@Directmedia2008].
+[^47]: Art. 7(5) [@DatabaseDirective1996]; [@Directmedia2008].
 
-Whatever the source, the consultancy should record where each intervention came from and under which terms. That record allows it to give Heijmans a warranty **and indemnity** on the data it hands over, which removes the hidden exposure identified in Section 3.3.
+Whatever the source, the consultancy should record where each intervention came from and under which terms. That record allows it to give Heijmans a warranty and indemnity on the data it hands over, which removes the hidden exposure identified in Section 3.3.
 
 ## Settling the rights with Heijmans
 
-The entanglement of rights is best resolved in a written agreement before the tool is reused or sold, as copyright can only be transferred by deed.[^44] The agreement should cover three points:
+The entanglement of rights is best resolved in a written agreement before the tool is reused or sold, as copyright can only be transferred by deed.[^48] The agreement should cover three points:
 
-1. **The consultancy keeps the copyright in the source code and licenses Heijmans to use the tool and offer it to third parties, preferably as an online service or in object code, so that the source code is not handed over. A licence fee or royalty can reflect its commercial value.**
-2. **The consultancy assigns to Heijmans any sui generis right it may hold in the database (D), by deed, in return for a licence-back allowing it to extract the interventions it contributed, subject to third-party terms, and reuse them for other clients.[^44a]**
-3. **The confidentiality clause continues to limit use of Heijmans' list and scans to Heijmans' projects. For other clients, the consultancy builds a separate version without that data.**
+[^48]: Art. 2(2) Aw.
 
-[^44]: Art. 2(2) Aw.
+1.  The consultancy keeps the copyright in the source code and licenses Heijmans to use the tool and offer it to third parties, preferably as an online service or in object code, so that the source code is not handed over. A licence fee or royalty can reflect its commercial value.
+2.  The consultancy assigns to Heijmans any sui generis right it may hold in the database (D), by deed, in return for a licence-back allowing it to extract the interventions it contributed, subject to third-party terms, and reuse them for other clients.[^49]
+3.  The confidentiality clause continues to limit use of Heijmans' list and scans to Heijmans' projects. For other clients, the consultancy builds a separate version without that data.
 
-[^44a]: **Recital 41** and **Art. 7(3) [@DatabaseDirective1996].**
+[^49]: Recital 41 and Art. 7(3) [@DatabaseDirective1996].
 
-## Protecting the source code **and scoring model**
+## Protecting the source code and scoring model
 
-Because copyright protects the expression of the code and not its **functionality,[^45]** competitors may build a similar tool. The consultancy's advantage therefore lies in keeping the code **and scoring model** secret: keeping **the code** out of client deliveries, binding employees and contractors with access through non-disclosure agreements, restricting access on a need-to-know **basis, and including confidentiality terms in licences to third-party users.** Licence terms can prohibit copying, but not observing and testing the program or decompiling it for interoperability.[^46] These measures also count as the reasonable steps trade secret protection requires.[^47]
+Because copyright protects the expression of the code and not its functionality,[^50] competitors may build a similar tool. The consultancy's advantage therefore lies in keeping the code and scoring model secret: keeping the code out of client deliveries, binding employees and contractors with access through non-disclosure agreements, restricting access on a need-to-know basis, and including confidentiality terms in licences to third-party users. Licence terms can prohibit copying, but not observing and testing the program or decompiling it for interoperability.[^51] These measures also count as the reasonable steps trade secret protection requires.[^52]
 
-[^45]: [@SAS2012].
+[^50]: [@SAS2012].
 
-[^46]: Arts. 5(3), 6 and 8 **[@SoftwareDirective2009].**
+[^51]: Arts. 5(3), 6 and 8 [@SoftwareDirective2009].
 
-[^47]: Art. 2(1)(c) [@TradeSecretsDirective2016].
+[^52]: Art. 2(1)(c) [@TradeSecretsDirective2016].
 
 ## Conclusion
 
-The tool can be completed and used for Heijmans as planned. To scale and sell it, the consultancy should first drop the scraping plan and agree the **rights** with Heijmans, and then license the library or replace its data with open or self-written sources. If no agreement with Heijmans is reached, the fallback is to **restrict** the tool to Heijmans and rebuild the generic core for other clients **from** independent sources.
+The tool can be completed and used for Heijmans once the scraping plan is dropped: the consultancy should license the library or replace its data with open or self-written sources. To scale and sell the tool, it should then agree the rights with Heijmans. If no agreement is reached, the fallback is to restrict the tool to Heijmans and rebuild the generic core for other clients from independent sources.
 
 # Technology Statement {.unnumbered}
 
-During the preparation of this work, we used ChatGPT (GPT-5) and Claude **(Opus** 5.5) in order to **help draft and revise text, suggest relevant legal sources,** improve documentation quality, help with reducing the number of words and enhance writing clarity. The following parts of the assignment were affected by AI tool usage: all sections. After using this tool/service, Rick de Rijk, Gilbert Laanen, Stefan Vonk, Thom Verzantvoort, **Patryk** Grodek and Tycho van Rooij evaluated the validity of the tool’s outputs, including the sources that generative AI tools have used, and edited the content as needed. As a consequence, Rick de Rijk, Gilbert Laanen, Stefan Vonk, Thom Verzantvoort, **Patryk** Grodek and Tycho van Rooij take full responsibility for the content of their work.
+During the preparation of this work, we used ChatGPT (GPT-6.1 Sol) and Claude (Opus 5.5) in order to review completed drafts and suggest corrections to spelling, grammar and coherence, suggest relevant legal sources, improve documentation quality, help with reducing the number of words and enhance writing clarity. The following parts of the assignment were affected by AI tool usage: all sections. After using this tool/service, Rick de Rijk, Gilbert Laanen, Stefan Vonk, Thom Verzantvoort, Patryk Grodek and Tycho van Rooij evaluated the validity of the tool’s outputs, including the sources that generative AI tools have used, and edited the content as needed. As a consequence, Rick de Rijk, Gilbert Laanen, Stefan Vonk, Thom Verzantvoort, Patryk Grodek and Tycho van Rooij take full responsibility for the content of their work.
 
 \clearpage
 
